@@ -11,6 +11,8 @@ const FEEDS = [
 
 const PER_FEED = 8; // 各社から取得する最大件数
 
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
+
 function decode(s) {
   if (!s) return '';
   return s
@@ -34,7 +36,17 @@ function pick(block, tag) {
 
 async function fetchFeed(feed) {
   try {
-    const res = await fetch(feed.url, { headers: { 'User-Agent': 'crypto-news-bot/1.0' } });
+    const res = await fetch(feed.url, {
+      headers: {
+        'User-Agent': UA,
+        'Accept': 'application/rss+xml, application/xml, text/xml, */*',
+      },
+      redirect: 'follow',
+    });
+    if (!res.ok) {
+      console.error('HTTP ' + res.status + ' for ' + feed.source);
+      return [];
+    }
     const xml = await res.text();
     const items = xml.split(/<item[ >]/i).slice(1).slice(0, PER_FEED);
     return items.map((raw) => {
@@ -61,7 +73,6 @@ async function fetchFeed(feed) {
     console.log(feed.source + ': ' + items.length + ' items');
     all = all.concat(items);
   }
-  // 日付の新しい順に並べる
   all.sort((a, b) => {
     const ta = Date.parse(a.pubDate) || 0;
     const tb = Date.parse(b.pubDate) || 0;
