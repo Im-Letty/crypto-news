@@ -1,115 +1,106 @@
 <!DOCTYPE html>
-  <html lang="ja">
-  <head>
+<html lang="ja">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crypto News - 暗号資産ニュース</title>
   <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; line-height: 1.7; color: #1a1a1a; background: #f7f8fa; }
-a { color: #1f6feb; text-decoration: none; }
-a:hover { text-decoration: underline; }
-header { background: #0d1117; color: #fff; padding: 1rem 0; }
-.container { max-width: 1080px; margin: 0 auto; padding: 0 1rem; }
-header .container { display: flex; align-items: center; justify-content: space-between; }
-.logo { font-size: 1.4rem; font-weight: 700; color: #fff; }
-.logo span { color: #f7931a; }
-  nav a { color: #c9d1d9; margin-left: 1.2rem; font-size: 0.95rem; }
-nav a:hover { color: #fff; }
-  .hero { background: #fff; border-bottom: 1px solid #e1e4e8; padding: 2rem 0; }
-  .hero h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-.hero p { color: #57606a; }
-main { padding: 2rem 0; }
-.categories { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
-.categories a { background: #fff; border: 1px solid #d0d7de; border-radius: 999px; padding: 0.3rem 0.9rem; font-size: 0.85rem; color: #24292f; }
-.categories a:hover { background: #f3f4f6; text-decoration: none; }
-  .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.2rem; }
-  .card { background: #fff; border: 1px solid #e1e4e8; border-radius: 10px; overflow: hidden; }
-  .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
-.card-body { padding: 1rem 1.2rem 1.3rem; }
-.card .cat { display: inline-block; font-size: 0.75rem; color: #f7931a; font-weight: 600; margin-bottom: 0.4rem; }
-.card h2 { font-size: 1.05rem; margin-bottom: 0.5rem; line-height: 1.4; }
-.card p { font-size: 0.9rem; color: #57606a; margin-bottom: 0.8rem; }
-.card .source { font-size: 0.78rem; color: #8b949e; }
-footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem; font-size: 0.85rem; }
-footer .disclaimer { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 1.2rem; }
-footer .disclaimer strong { color: #f7931a; }
-footer nav { margin-bottom: 0.8rem; }
-footer nav a { color: #c9d1d9; margin: 0 0.8rem 0 0; }
-footer .copy { color: #8b949e; }
-</style>
-  </head>
-  <body>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; line-height: 1.7; color: #1a1a1a; background: #f7f8fa; }
+    a { color: #1f6feb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: #0d1117; color: #fff; padding: 1rem 0; }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 1rem; }
+    header .container { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.4rem; font-weight: 700; color: #fff; }
+    .logo span { color: #f7931a; }
+    nav a { color: #c9d1d9; margin-left: 1.2rem; font-size: 0.95rem; }
+    nav a:hover { color: #fff; }
+    .hero { background: #fff; border-bottom: 1px solid #e1e4e8; padding: 2rem 0; }
+    .hero h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .hero p { color: #57606a; }
+    main { padding: 2rem 0; }
+    .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.2rem; }
+    .card { background: #fff; border: 1px solid #e1e4e8; border-radius: 10px; overflow: hidden; }
+    .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .card-body { padding: 1rem 1.2rem 1.3rem; }
+    .card .cat { display: inline-block; font-size: 0.75rem; color: #f7931a; font-weight: 600; margin-bottom: 0.4rem; }
+    .card h2 { font-size: 1.05rem; margin-bottom: 0.5rem; line-height: 1.4; }
+    .card p { font-size: 0.9rem; color: #57606a; margin-bottom: 0.8rem; }
+    .card .source { font-size: 0.78rem; color: #8b949e; }
+    footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem; font-size: 0.85rem; }
+    footer .disclaimer { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 1.2rem; }
+    footer .disclaimer strong { color: #f7931a; }
+    footer nav { margin-bottom: 0.8rem; }
+    footer nav a { color: #c9d1d9; margin: 0 0.8rem 0 0; }
+    footer .copy { color: #8b949e; }
+  </style>
+</head>
+<body>
   <header>
-  <div class="container">
-  <div class="logo">Crypto<span>News</span></div>
-  <nav>
-  <a href="#">ホーム</a>
-  <a href="#">ニュース</a>
-  <a href="#">相場</a>
-  <a href="#">運営情報</a>
-  </nav>
-  </div>
-</header>
+    <div class="container">
+      <div class="logo">Crypto<span>News</span></div>
+      <nav>
+        <a href="#">ホーム</a>
+        <a href="#">ニュース</a>
+        <a href="#">相場</a>
+        <a href="#">運営情報</a>
+      </nav>
+    </div>
+  </header>
+
   <section class="hero">
-  <div class="container">
-  <h1>暗号資産の最新ニュースをお届け</h1>
-<p>ビットコイン、イーサリアム、規制動向まで、仮想通貨に関する情報をわかりやすくまとめます。</p>
-</div>
+    <div class="container">
+      <h1>暗号資産の最新ニュースをお届け</h1>
+      <p>ビットコイン、イーサリアム、規制動向まで、暗号資産に関する情報をわかりやすくまとめます。</p>
+    </div>
   </section>
+
   <main>
-<div class="container">
-<div class="categories">
-<a href="#">ビットコイン</a>
-<a href="#">イーサリアム</a>
-<a href="#">規制・法律</a>
-<a href="#">取引所</a>
-<a href="#">NFT</a>
-<a href="#">DeFi</a>
-<a href="#">市況・相場</a>
-</div>
-<div class="news-grid">
-<article class="card">
-<div class="card-body">
-<span class="cat">ビットコイン</span>
-<h2><a href="#">【見出しサンプル】自分で書いたニュース見出しが入ります</a></h2>
-<p>ここにニュースの要約を自分の言葉で短く記載します。事実を再構成して説明します。</p>
-<div class="source">出典：<a href="#" target="_blank" rel="noopener">メディア名</a></div>
-</div>
-</article>
-<article class="card">
-<div class="card-body">
-<span class="cat">規制・法律</span>
-<h2><a href="#">【見出しサンプル】オリジナルの見出しを2番目の記事に</a></h2>
-<p>ニュースの概要を自分の文章で記述します。原文の丸写しは避けます。</p>
-<div class="source">出典：<a href="#" target="_blank" rel="noopener">メディア名</a></div>
-</div>
-</article>
-<article class="card">
-<div class="card-body">
-<span class="cat">取引所</span>
-<h2><a href="#">【見出しサンプル】3番目の記事見出し</a></h2>
-<p>事実情報を要約し、詳細は出典リンクから確認できるようにします。</p>
-<div class="source">出典：<a href="#" target="_blank" rel="noopener">メディア名</a></div>
-</div>
-</article>
-</div>
-</div>
-</main>
-<footer>
-<div class="container">
-<div class="disclaimer">
-<strong>免責事項</strong><br>
-本サイトは暗号資産（仮想通貨）に関する情報提供を目的としており、特定の金融商品の購入や投資を勧誘するものではありません。掲載する情報は最新・正確であるよう努めていますが、その完全性を保証するものではありません。投資に関する最終的な判断は、ご自身の責任と判断で行ってください。
-</div>
-<nav>
-<a href="#">このサイトについて</a>
-<a href="#">お問い合わせ</a>
-<a href="#">利用規約</a>
-<a href="#">プライバシーポリシー</a>
-</nav>
-<div class="copy">&copy; 2026 CryptoNews. All rights reserved.</div>
-</div>
-</footer>
+    <div class="container">
+      <div class="news-grid">
+        <article class="card">
+          <div class="card-body">
+            <span class="cat">暗号資産</span>
+            <h2><a href="#">【見出しサンプル】自分で書いたニュース見出しが入ります</a></h2>
+            <p>ここにニュースの要約を自分の言葉で短く記載します。事実を再構成して説明します。</p>
+            <div class="source">出典：<a href="#" target="_blank" rel="noopener">メディア名</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <span class="cat">暗号資産</span>
+            <h2><a href="#">【見出しサンプル】オリジナルの見出しを2番目の記事に</a></h2>
+            <p>ニュースの概要を自分の文章で記述します。原文の丸写しは避けます。</p>
+            <div class="source">出典：<a href="#" target="_blank" rel="noopener">メディア名</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <span class="cat">暗号資産</span>
+            <h2><a href="#">【見出しサンプル】3番目の記事見出し</a></h2>
+            <p>事実情報を要約し、詳細は出典リンクから確認できるようにします。</p>
+            <div class="source">出典：<a href="#" target="_blank" rel="noopener">メディア名</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="disclaimer">
+        <strong>免責事項</strong><br>
+        本サイトは暗号資産に関する情報提供を目的としており、特定の金融商品の購入や投資を勧誘するものではありません。掲載する情報は最新・正確であるよう努めていますが、その完全性を保証するものではありません。投資に関する最終的な判断は、ご自身の責任と判断で行ってください。
+      </div>
+      <nav>
+        <a href="#">このサイトについて</a>
+        <a href="#">お問い合わせ</a>
+        <a href="#">利用規約</a>
+        <a href="#">プライバシーポリシー</a>
+      </nav>
+      <div class="copy">&copy; 2026 CryptoNews. All rights reserved.</div>
+    </div>
+  </footer>
 </body>
 </html>
