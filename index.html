@@ -69,9 +69,9 @@ footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem;
 .count-note { font-size: 0.75rem; color: #999; margin-bottom: 0.5rem; }
 .count-note.full { color: #f85149; }
 
-/* 有名どころクイック選択 */
-.quick-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.4rem; }
-.quick-opt { background: #f0f1f3; border: 1px solid #e1e4e8; border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.85rem; cursor: pointer; }
+/* 有名どころクイック選択（均等幅でキレイに折り返す） */
+.quick-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.45rem; margin-bottom: 0.4rem; }
+.quick-opt { background: #f0f1f3; border: 1px solid #e1e4e8; border-radius: 6px; padding: 0.35rem 0; font-size: 0.85rem; cursor: pointer; text-align: center; }
 .quick-opt:hover { background: #e6e8eb; }
 .quick-opt.active { background: #f7931a; border-color: #f7931a; color: #fff; }
 
@@ -146,13 +146,11 @@ footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem;
 <div class="modal-overlay" id="modal-overlay">
 <div class="modal">
 <h3>表示する銘柄を選択</h3>
-<p class="note">ティッカーに流す暗号資産を選べます（最大6銘柄）。選んだ内容はこのブラウザに保存されます。</p>
+<p class="note">ティッカーに流す暗号資産を選べます（最大6銘柄）。</p>
 
-<h4>選択中</h4>
 <div class="selected-box" id="selected-box"></div>
 <div class="count-note" id="count-note"></div>
 
-<h4>有名どころ</h4>
 <div class="quick-list" id="quick-list"></div>
 
 <h4>検索して追加</h4>
@@ -172,7 +170,6 @@ footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem;
 var MAX_COINS = 6;
 var DEFAULT_COINS = ['bitcoin', 'ethereum', 'ripple', 'solana'];
 var STORAGE_KEY = 'cryptonews_ticker_coins';
-// 有名どころ（クイック選択用）
 var FAMOUS = [
 { id: 'bitcoin', sym: 'BTC', name: 'ビットコイン' },
 { id: 'ethereum', sym: 'ETH', name: 'イーサリアム' },
@@ -183,7 +180,6 @@ var FAMOUS = [
 { id: 'cardano', sym: 'ADA', name: 'カルダノ' },
 { id: 'tron', sym: 'TRX', name: 'トロン' }
 ];
-// id -> {sym, name} のラベル辞書（表示用）。検索で見つけたものも随時追加する。
 var COIN_LABELS = {};
 FAMOUS.forEach(function (c) { COIN_LABELS[c.id] = { sym: c.sym, name: c.name }; });
 
@@ -250,7 +246,6 @@ return;
 }
 var html = parts.join('');
 track.innerHTML = html + html;
-// 銘柄数に応じてスクロール速度を調整（1銘柄あたり約13秒）
 track.style.animationDuration = (parts.length * 13) + 's';
 } catch (e) {
 track.innerHTML = '<span class="tk-item"><span class="tk-usd">価格の読み込みに失敗しました</span></span>';
@@ -258,8 +253,8 @@ track.innerHTML = '<span class="tk-item"><span class="tk-usd">価格の読み込
 }
 
 /* ===== モーダル（選択UI） ===== */
-var workingSelection = []; // 編集中の選択（idの配列）
-var coinListCache = null; // CoinGeckoの全銘柄リスト（検索用）
+var workingSelection = [];
+var coinListCache = null;
 var searchTimer = null;
 
 function renderSelected() {
@@ -276,7 +271,6 @@ note.className = 'count-note full';
 note.textContent = workingSelection.length + ' / ' + MAX_COINS + ' 銘柄';
 note.className = 'count-note';
 }
-// チップの削除ボタン
 Array.prototype.forEach.call(box.querySelectorAll('button'), function (b) {
 b.addEventListener('click', function () {
 var id = this.getAttribute('data-id');
@@ -340,7 +334,6 @@ return (c.symbol && c.symbol.toLowerCase() === query) ||
 (c.name && c.name.toLowerCase().indexOf(query) !== -1) ||
 (c.id && c.id.toLowerCase().indexOf(query) !== -1);
 });
-// シンボル完全一致を優先して並べ替え、上位30件
 matches.sort(function (a, b) {
 var ae = a.symbol && a.symbol.toLowerCase() === query ? 0 : 1;
 var be = b.symbol && b.symbol.toLowerCase() === query ? 0 : 1;
