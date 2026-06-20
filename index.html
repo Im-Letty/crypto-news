@@ -11,7 +11,7 @@ a { color: #1f6feb; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* 価格ティッカー */
-.ticker-wrap { background: #0a0c10; border-bottom: 1px solid #21262d; overflow: hidden; position: relative; }
+.ticker-wrap { background: #0a0c10; border: 1px solid #21262d; border-radius: 8px; overflow: hidden; position: relative; margin-bottom: 1.2rem; }
 .ticker-bar { display: flex; align-items: center; }
 .ticker-track { display: inline-flex; align-items: center; white-space: nowrap; padding: 0.55rem 0; animation: ticker-scroll 60s linear infinite; }
 .ticker-wrap:hover .ticker-track { animation-play-state: paused; }
@@ -69,14 +69,6 @@ footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem;
 </head>
 <body>
 
-<!-- 価格ティッカー -->
-<div class="ticker-wrap">
-<div class="ticker-bar">
-<div class="ticker-track" id="ticker-track"><span class="tk-item"><span class="tk-usd">価格を読み込み中...</span></span></div>
-<button class="ticker-edit" id="ticker-edit" type="button">銘柄を編集</button>
-</div>
-</div>
-
 <header>
 <div class="container header-inner">
 <div class="logo">Crypto<span>News</span></div>
@@ -98,6 +90,15 @@ footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem;
 
 <main id="news">
 <div class="container">
+
+<!-- 価格ティッカー -->
+<div class="ticker-wrap">
+<div class="ticker-bar">
+<div class="ticker-track" id="ticker-track"><span class="tk-item"><span class="tk-usd">価格を読み込み中...</span></span></div>
+<button class="ticker-edit" id="ticker-edit" type="button">銘柄を編集</button>
+</div>
+</div>
+
 <div class="news-meta" id="news-meta">最新ニュースを読み込み中...</div>
 <div class="news-grid" id="news-grid">
 <div class="loading">読み込んでいます...</div>
@@ -129,147 +130,145 @@ footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem;
 
 <script>
 /* ===== 価格ティッカー ===== */
-// 選択候補（id は CoinGecko の coin id）
 var COIN_CATALOG = [
-  { id: 'bitcoin', sym: 'BTC', name: 'ビットコイン' },
-  { id: 'ethereum', sym: 'ETH', name: 'イーサリアム' },
-  { id: 'ripple', sym: 'XRP', name: 'リップル' },
-  { id: 'solana', sym: 'SOL', name: 'ソラナ' },
-  { id: 'dogecoin', sym: 'DOGE', name: 'ドージコイン' },
-  { id: 'cardano', sym: 'ADA', name: 'カルダノ' },
-  { id: 'binancecoin', sym: 'BNB', name: 'BNB' },
-  { id: 'litecoin', sym: 'LTC', name: 'ライトコイン' },
-  { id: 'polkadot', sym: 'DOT', name: 'ポルカドット' },
-  { id: 'avalanche-2', sym: 'AVAX', name: 'アバランチ' },
-  { id: 'chainlink', sym: 'LINK', name: 'チェーンリンク' },
-  { id: 'tron', sym: 'TRX', name: 'トロン' }
+{ id: 'bitcoin', sym: 'BTC', name: 'ビットコイン' },
+{ id: 'ethereum', sym: 'ETH', name: 'イーサリアム' },
+{ id: 'ripple', sym: 'XRP', name: 'リップル' },
+{ id: 'solana', sym: 'SOL', name: 'ソラナ' },
+{ id: 'dogecoin', sym: 'DOGE', name: 'ドージコイン' },
+{ id: 'cardano', sym: 'ADA', name: 'カルダノ' },
+{ id: 'binancecoin', sym: 'BNB', name: 'BNB' },
+{ id: 'litecoin', sym: 'LTC', name: 'ライトコイン' },
+{ id: 'polkadot', sym: 'DOT', name: 'ポルカドット' },
+{ id: 'avalanche-2', sym: 'AVAX', name: 'アバランチ' },
+{ id: 'chainlink', sym: 'LINK', name: 'チェーンリンク' },
+{ id: 'tron', sym: 'TRX', name: 'トロン' }
 ];
 var DEFAULT_COINS = ['bitcoin', 'ethereum', 'ripple', 'solana'];
 var STORAGE_KEY = 'cryptonews_ticker_coins';
 
 function getSelectedCoins() {
-  try {
-    var saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    if (Array.isArray(saved) && saved.length > 0) return saved;
-  } catch (e) {}
-  return DEFAULT_COINS.slice();
+try {
+var saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+if (Array.isArray(saved) && saved.length > 0) return saved;
+} catch (e) {}
+return DEFAULT_COINS.slice();
 }
 
 function fmtUSD(v) {
-  if (v >= 1) return '$' + v.toLocaleString('en-US', { maximumFractionDigits: 2 });
-  return '$' + v.toLocaleString('en-US', { maximumFractionDigits: 6 });
+if (v >= 1) return '$' + v.toLocaleString('en-US', { maximumFractionDigits: 2 });
+return '$' + v.toLocaleString('en-US', { maximumFractionDigits: 6 });
 }
 function fmtJPY(v) {
-  if (v >= 1) return '¥' + Math.round(v).toLocaleString('ja-JP');
-  return '¥' + v.toLocaleString('ja-JP', { maximumFractionDigits: 4 });
+if (v >= 1) return '¥' + Math.round(v).toLocaleString('ja-JP');
+return '¥' + v.toLocaleString('ja-JP', { maximumFractionDigits: 4 });
 }
 
 async function loadPrices() {
-  var track = document.getElementById('ticker-track');
-  var ids = getSelectedCoins();
-  try {
-    var url = 'https://api.coingecko.com/api/v3/simple/price?ids=' + ids.join(',') +
-      '&vs_currencies=usd,jpy&include_24hr_change=true';
-    var res = await fetch(url);
-    if (!res.ok) throw new Error('price fetch failed');
-    var data = await res.json();
-    var parts = [];
-    ids.forEach(function (id) {
-      var info = COIN_CATALOG.filter(function (c) { return c.id === id; })[0];
-      var d = data[id];
-      if (!info || !d) return;
-      var chg = d.usd_24h_change;
-      var chgCls = chg >= 0 ? 'tk-up' : 'tk-down';
-      var chgTxt = (chg >= 0 ? '+' : '') + (chg != null ? chg.toFixed(2) : '0.00') + '%';
-      parts.push(
-        '<span class="tk-item">' +
-        '<span class="tk-sym">' + info.sym + '</span>' +
-        '<span class="tk-usd">' + fmtUSD(d.usd) + '</span>' +
-        '<span class="tk-jpy">' + fmtJPY(d.jpy) + '</span>' +
-        '<span class="tk-chg ' + chgCls + '">' + chgTxt + '</span>' +
-        '</span>'
-      );
-    });
-    if (parts.length === 0) {
-      track.innerHTML = '<span class="tk-item"><span class="tk-usd">価格を表示できませんでした</span></span>';
-      return;
-    }
-    // スムーズなループのため2回繰り返す
-    var html = parts.join('');
-    track.innerHTML = html + html;
-  } catch (e) {
-    track.innerHTML = '<span class="tk-item"><span class="tk-usd">価格の読み込みに失敗しました</span></span>';
-  }
+var track = document.getElementById('ticker-track');
+var ids = getSelectedCoins();
+try {
+var url = 'https://api.coingecko.com/api/v3/simple/price?ids=' + ids.join(',') +
+'&vs_currencies=usd,jpy&include_24hr_change=true';
+var res = await fetch(url);
+if (!res.ok) throw new Error('price fetch failed');
+var data = await res.json();
+var parts = [];
+ids.forEach(function (id) {
+var info = COIN_CATALOG.filter(function (c) { return c.id === id; })[0];
+var d = data[id];
+if (!info || !d) return;
+var chg = d.usd_24h_change;
+var chgCls = chg >= 0 ? 'tk-up' : 'tk-down';
+var chgTxt = (chg >= 0 ? '+' : '') + (chg != null ? chg.toFixed(2) : '0.00') + '%';
+parts.push(
+'<span class="tk-item">' +
+'<span class="tk-sym">' + info.sym + '</span>' +
+'<span class="tk-usd">' + fmtUSD(d.usd) + '</span>' +
+'<span class="tk-jpy">' + fmtJPY(d.jpy) + '</span>' +
+'<span class="tk-chg ' + chgCls + '">' + chgTxt + '</span>' +
+'</span>'
+);
+});
+if (parts.length === 0) {
+track.innerHTML = '<span class="tk-item"><span class="tk-usd">価格を表示できませんでした</span></span>';
+return;
+}
+var html = parts.join('');
+track.innerHTML = html + html;
+} catch (e) {
+track.innerHTML = '<span class="tk-item"><span class="tk-usd">価格の読み込みに失敗しました</span></span>';
+}
 }
 
 /* ===== 銘柄選択モーダル ===== */
 function openModal() {
-  var list = document.getElementById('coin-list');
-  var selected = getSelectedCoins();
-  list.innerHTML = COIN_CATALOG.map(function (c) {
-    var checked = selected.indexOf(c.id) !== -1 ? 'checked' : '';
-    return '<label class="coin-opt"><input type="checkbox" value="' + c.id + '" ' + checked + '>' +
-      c.sym + ' <span style="color:#888;font-size:0.8rem;margin-left:0.3rem;">' + c.name + '</span></label>';
-  }).join('');
-  document.getElementById('modal-overlay').classList.add('open');
+var list = document.getElementById('coin-list');
+var selected = getSelectedCoins();
+list.innerHTML = COIN_CATALOG.map(function (c) {
+var checked = selected.indexOf(c.id) !== -1 ? 'checked' : '';
+return '<label class="coin-opt"><input type="checkbox" value="' + c.id + '" ' + checked + '>' +
+c.sym + ' <span style="color:#888;font-size:0.8rem;margin-left:0.3rem;">' + c.name + '</span></label>';
+}).join('');
+document.getElementById('modal-overlay').classList.add('open');
 }
 function closeModal() {
-  document.getElementById('modal-overlay').classList.remove('open');
+document.getElementById('modal-overlay').classList.remove('open');
 }
 function saveModal() {
-  var checks = document.querySelectorAll('#coin-list input[type=checkbox]:checked');
-  var ids = Array.prototype.map.call(checks, function (c) { return c.value; });
-  if (ids.length === 0) { ids = DEFAULT_COINS.slice(); }
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(ids)); } catch (e) {}
-  closeModal();
-  loadPrices();
+var checks = document.querySelectorAll('#coin-list input[type=checkbox]:checked');
+var ids = Array.prototype.map.call(checks, function (c) { return c.value; });
+if (ids.length === 0) { ids = DEFAULT_COINS.slice(); }
+try { localStorage.setItem(STORAGE_KEY, JSON.stringify(ids)); } catch (e) {}
+closeModal();
+loadPrices();
 }
 
 document.getElementById('ticker-edit').addEventListener('click', openModal);
 document.getElementById('modal-cancel').addEventListener('click', closeModal);
 document.getElementById('modal-save').addEventListener('click', saveModal);
 document.getElementById('modal-overlay').addEventListener('click', function (e) {
-  if (e.target === this) closeModal();
+if (e.target === this) closeModal();
 });
 
 loadPrices();
-setInterval(loadPrices, 120000); // 2分ごとに価格更新
+setInterval(loadPrices, 120000);
 
 /* ===== ニュース ===== */
 async function loadNews() {
-  var grid = document.getElementById('news-grid');
-  var meta = document.getElementById('news-meta');
-  try {
-    var res = await fetch('news.json?t=' + Date.now());
-    if (!res.ok) throw new Error('fetch failed');
-    var data = await res.json();
-    var items = data.items || [];
-    if (items.length === 0) {
-      grid.innerHTML = '<div class="error">現在表示できるニュースがありません。</div>';
-      meta.textContent = '';
-      return;
-    }
-    if (data.updatedAt) {
-      var d = new Date(data.updatedAt);
-      meta.textContent = '最終更新：' + d.toLocaleString('ja-JP') + '（' + items.length + '件）';
-    }
-    grid.innerHTML = items.map(function (it) {
-      var title = escapeHtml(it.title);
-      var link = encodeURI(it.link);
-      var source = escapeHtml(it.source || '');
-      return '<article class="card">' +
-        '<span class="cat">暗号資産</span>' +
-        '<h2><a href="' + link + '" target="_blank" rel="noopener noreferrer">' + title + '</a></h2>' +
-        '<div class="source">出典：<a href="' + link + '" target="_blank" rel="noopener noreferrer">' + source + '</a></div>' +
-        '</article>';
-    }).join('');
-  } catch (e) {
-    grid.innerHTML = '<div class="error">ニュースの読み込みに失敗しました。時間をおいて再度お試しください。</div>';
-    meta.textContent = '';
-  }
+var grid = document.getElementById('news-grid');
+var meta = document.getElementById('news-meta');
+try {
+var res = await fetch('news.json?t=' + Date.now());
+if (!res.ok) throw new Error('fetch failed');
+var data = await res.json();
+var items = data.items || [];
+if (items.length === 0) {
+grid.innerHTML = '<div class="error">現在表示できるニュースがありません。</div>';
+meta.textContent = '';
+return;
+}
+if (data.updatedAt) {
+var d = new Date(data.updatedAt);
+meta.textContent = '最終更新：' + d.toLocaleString('ja-JP') + '（' + items.length + '件）';
+}
+grid.innerHTML = items.map(function (it) {
+var title = escapeHtml(it.title);
+var link = encodeURI(it.link);
+var source = escapeHtml(it.source || '');
+return '<article class="card">' +
+'<span class="cat">暗号資産</span>' +
+'<h2><a href="' + link + '" target="_blank" rel="noopener noreferrer">' + title + '</a></h2>' +
+'<div class="source">出典：<a href="' + link + '" target="_blank" rel="noopener noreferrer">' + source + '</a></div>' +
+'</article>';
+}).join('');
+} catch (e) {
+grid.innerHTML = '<div class="error">ニュースの読み込みに失敗しました。時間をおいて再度お試しください。</div>';
+meta.textContent = '';
+}
 }
 function escapeHtml(s) {
-  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 loadNews();
 </script>
