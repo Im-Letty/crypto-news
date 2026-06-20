@@ -1,115 +1,277 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crypto News - 暗号資産ニュース</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; background: #f5f6f8; color: #1a1a1a; line-height: 1.7; }
-    a { color: #1f6feb; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header { background: #0d1117; color: #fff; padding: 1rem 0; }
-    .container { max-width: 880px; margin: 0 auto; padding: 0 1rem; }
-    .header-inner { display: flex; align-items: center; justify-content: space-between; }
-    .logo { font-size: 1.5rem; font-weight: bold; color: #fff; }
-    .logo span { color: #f7931a; }
-    nav a { color: #c9d1d9; margin-left: 1.2rem; font-size: 0.95rem; }
-    .hero { background: #161b22; color: #fff; padding: 2.5rem 0; text-align: center; }
-    .hero h1 { font-size: 1.6rem; margin-bottom: 0.6rem; }
-    .hero p { color: #c9d1d9; font-size: 0.95rem; }
-    main { padding: 2rem 0; }
-    .news-meta { font-size: 0.85rem; color: #666; margin-bottom: 1.2rem; }
-    .news-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
-    .card { background: #fff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.2rem 1.4rem; transition: box-shadow 0.2s; }
-    .card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
-    .card .cat { display: inline-block; background: #f7931a; color: #fff; font-size: 0.72rem; padding: 0.15rem 0.6rem; border-radius: 4px; margin-bottom: 0.6rem; }
-    .card h2 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-    .card h2 a { color: #1a1a1a; }
-    .card h2 a:hover { color: #f7931a; text-decoration: none; }
-    .card .source { font-size: 0.82rem; color: #888; }
-    .card .source a { color: #1f6feb; }
-    .loading, .error { text-align: center; color: #888; padding: 2rem 0; }
-    footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem; font-size: 0.85rem; }
-    .disclaimer { background: #161b22; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 1.2rem; color: #8b949e; font-size: 0.8rem; }
-    .copy { text-align: center; color: #6e7681; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto News - 暗号資産ニュース</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; background: #f5f6f8; color: #1a1a1a; line-height: 1.7; }
+a { color: #1f6feb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 価格ティッカー */
+.ticker-wrap { background: #0a0c10; border-bottom: 1px solid #21262d; overflow: hidden; position: relative; }
+.ticker-bar { display: flex; align-items: center; }
+.ticker-track { display: inline-flex; align-items: center; white-space: nowrap; padding: 0.55rem 0; animation: ticker-scroll 60s linear infinite; }
+.ticker-wrap:hover .ticker-track { animation-play-state: paused; }
+@keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.tk-item { display: inline-flex; align-items: baseline; margin: 0 1.4rem; font-variant-numeric: tabular-nums; }
+.tk-sym { color: #f7931a; font-weight: bold; font-size: 0.9rem; margin-right: 0.5rem; letter-spacing: 0.03em; }
+.tk-usd { color: #fff; font-size: 0.95rem; font-weight: 600; }
+.tk-jpy { color: #8b949e; font-size: 0.72rem; margin-left: 0.4rem; }
+.tk-chg { font-size: 0.75rem; margin-left: 0.45rem; }
+.tk-up { color: #2ea043; }
+.tk-down { color: #f85149; }
+.ticker-edit { flex: 0 0 auto; background: #161b22; color: #c9d1d9; border: none; border-left: 1px solid #21262d; padding: 0 0.9rem; height: 100%; align-self: stretch; cursor: pointer; font-size: 0.78rem; white-space: nowrap; }
+.ticker-edit:hover { background: #21262d; color: #fff; }
+
+header { background: #0d1117; color: #fff; padding: 1rem 0; }
+.container { max-width: 880px; margin: 0 auto; padding: 0 1rem; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 1.5rem; font-weight: bold; color: #fff; }
+.logo span { color: #f7931a; }
+nav a { color: #c9d1d9; margin-left: 1.2rem; font-size: 0.95rem; }
+.hero { background: #161b22; color: #fff; padding: 2.5rem 0; text-align: center; }
+.hero h1 { font-size: 1.6rem; margin-bottom: 0.6rem; }
+.hero p { color: #c9d1d9; font-size: 0.95rem; }
+main { padding: 2rem 0; }
+.news-meta { font-size: 0.85rem; color: #666; margin-bottom: 1.2rem; }
+.news-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.card { background: #fff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.2rem 1.4rem; transition: box-shadow 0.2s; }
+.card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.card .cat { display: inline-block; background: #f7931a; color: #fff; font-size: 0.72rem; padding: 0.15rem 0.6rem; border-radius: 4px; margin-bottom: 0.6rem; }
+.card h2 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.card h2 a { color: #1a1a1a; }
+.card h2 a:hover { color: #f7931a; text-decoration: none; }
+.card .source { font-size: 0.82rem; color: #888; }
+.card .source a { color: #1f6feb; }
+.loading, .error { text-align: center; color: #888; padding: 2rem 0; }
+footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem; font-size: 0.85rem; }
+.disclaimer { background: #161b22; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 1.2rem; color: #8b949e; font-size: 0.8rem; }
+.copy { text-align: center; color: #6e7681; }
+
+/* 銘柄選択モーダル */
+.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 100; align-items: center; justify-content: center; padding: 1rem; }
+.modal-overlay.open { display: flex; }
+.modal { background: #fff; border-radius: 10px; max-width: 420px; width: 100%; max-height: 80vh; overflow-y: auto; padding: 1.4rem; }
+.modal h3 { font-size: 1.1rem; margin-bottom: 0.3rem; }
+.modal p.note { font-size: 0.8rem; color: #888; margin-bottom: 1rem; }
+.coin-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 1.2rem; }
+.coin-opt { display: flex; align-items: center; padding: 0.5rem 0.7rem; border: 1px solid #e1e4e8; border-radius: 6px; cursor: pointer; font-size: 0.9rem; }
+.coin-opt input { margin-right: 0.5rem; }
+.coin-opt:hover { background: #f5f6f8; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 0.6rem; }
+.btn { padding: 0.5rem 1.1rem; border-radius: 6px; border: none; cursor: pointer; font-size: 0.9rem; }
+.btn-primary { background: #f7931a; color: #fff; }
+.btn-secondary { background: #eee; color: #333; }
+</style>
 </head>
 <body>
-  <header>
-    <div class="container header-inner">
-      <div class="logo">Crypto<span>News</span></div>
-      <nav>
-        <a href="#">ホーム</a>
-        <a href="#news">ニュース</a>
-        <a href="#">相場</a>
-        <a href="#">運営情報</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>暗号資産の最新ニュースをお届け</h1>
-      <p>ビットコイン・イーサリアム・規制動向など、暗号資産に関する情報をまとめてチェック</p>
-    </div>
-  </section>
+<!-- 価格ティッカー -->
+<div class="ticker-wrap">
+<div class="ticker-bar">
+<div class="ticker-track" id="ticker-track"><span class="tk-item"><span class="tk-usd">価格を読み込み中...</span></span></div>
+<button class="ticker-edit" id="ticker-edit" type="button">銘柄を編集</button>
+</div>
+</div>
 
-  <main id="news">
-    <div class="container">
-      <div class="news-meta" id="news-meta">最新ニュースを読み込み中...</div>
-      <div class="news-grid" id="news-grid">
-        <div class="loading">読み込んでいます...</div>
-      </div>
-    </div>
-  </main>
+<header>
+<div class="container header-inner">
+<div class="logo">Crypto<span>News</span></div>
+<nav>
+<a href="#">ホーム</a>
+<a href="#news">ニュース</a>
+<a href="#">相場</a>
+<a href="#">運営情報</a>
+</nav>
+</div>
+</header>
 
-  <footer>
-    <div class="container">
-      <div class="disclaimer">
-        <strong>免責事項：</strong>当サイトは暗号資産に関する情報提供を目的としたものであり、特定の暗号資産への投資の勧誘・推奨を行うものではありません。掲載している見出しは各提供元メディアの公式配信（RSS）に基づくものであり、記事の詳細は各リンク先の提供元サイトでご確認ください。投資判断はご自身の責任において行ってください。
-      </div>
-      <div class="copy">© 2026 CryptoNews. All rights reserved.</div>
-    </div>
-  </footer>
+<section class="hero">
+<div class="container">
+<h1>暗号資産の最新ニュースをお届け</h1>
+<p>ビットコイン・イーサリアム・規制動向など、暗号資産に関する情報をまとめてチェック</p>
+</div>
+</section>
 
-  <script>
-    async function loadNews() {
-      const grid = document.getElementById('news-grid');
-      const meta = document.getElementById('news-meta');
-      try {
-        const res = await fetch('news.json?t=' + Date.now());
-        if (!res.ok) throw new Error('fetch failed');
-        const data = await res.json();
-        const items = data.items || [];
-        if (items.length === 0) {
-          grid.innerHTML = '<div class="error">現在表示できるニュースがありません。</div>';
-          meta.textContent = '';
-          return;
-        }
-        if (data.updatedAt) {
-          const d = new Date(data.updatedAt);
-          meta.textContent = '最終更新：' + d.toLocaleString('ja-JP') + '（' + items.length + '件）';
-        }
-        grid.innerHTML = items.map(function (it) {
-          var title = escapeHtml(it.title);
-          var link = encodeURI(it.link);
-          var source = escapeHtml(it.source || '');
-          return '<article class="card">' +
-            '<span class="cat">暗号資産</span>' +
-            '<h2><a href="' + link + '" target="_blank" rel="noopener noreferrer">' + title + '</a></h2>' +
-            '<div class="source">出典：<a href="' + link + '" target="_blank" rel="noopener noreferrer">' + source + '</a></div>' +
-            '</article>';
-        }).join('');
-      } catch (e) {
-        grid.innerHTML = '<div class="error">ニュースの読み込みに失敗しました。時間をおいて再度お試しください。</div>';
-        meta.textContent = '';
-      }
+<main id="news">
+<div class="container">
+<div class="news-meta" id="news-meta">最新ニュースを読み込み中...</div>
+<div class="news-grid" id="news-grid">
+<div class="loading">読み込んでいます...</div>
+</div>
+</div>
+</main>
+
+<footer>
+<div class="container">
+<div class="disclaimer">
+<strong>免責事項：</strong>当サイトは暗号資産に関する情報提供を目的としたものであり、特定の暗号資産への投資の勧誘・推奨を行うものではありません。掲載している見出しは各提供元メディアの公式配信（RSS）に基づくものであり、記事の詳細は各リンク先の提供元サイトでご確認ください。表示している価格は参考値であり、正確性を保証するものではありません。投資判断はご自身の責任において行ってください。
+</div>
+<div class="copy">© 2026 CryptoNews. All rights reserved.</div>
+</div>
+</footer>
+
+<!-- 銘柄選択モーダル -->
+<div class="modal-overlay" id="modal-overlay">
+<div class="modal">
+<h3>表示する銘柄を選択</h3>
+<p class="note">ティッカーに流す暗号資産を選べます。選んだ内容はこのブラウザに保存されます。</p>
+<div class="coin-list" id="coin-list"></div>
+<div class="modal-actions">
+<button class="btn btn-secondary" id="modal-cancel" type="button">キャンセル</button>
+<button class="btn btn-primary" id="modal-save" type="button">保存</button>
+</div>
+</div>
+</div>
+
+<script>
+/* ===== 価格ティッカー ===== */
+// 選択候補（id は CoinGecko の coin id）
+var COIN_CATALOG = [
+  { id: 'bitcoin', sym: 'BTC', name: 'ビットコイン' },
+  { id: 'ethereum', sym: 'ETH', name: 'イーサリアム' },
+  { id: 'ripple', sym: 'XRP', name: 'リップル' },
+  { id: 'solana', sym: 'SOL', name: 'ソラナ' },
+  { id: 'dogecoin', sym: 'DOGE', name: 'ドージコイン' },
+  { id: 'cardano', sym: 'ADA', name: 'カルダノ' },
+  { id: 'binancecoin', sym: 'BNB', name: 'BNB' },
+  { id: 'litecoin', sym: 'LTC', name: 'ライトコイン' },
+  { id: 'polkadot', sym: 'DOT', name: 'ポルカドット' },
+  { id: 'avalanche-2', sym: 'AVAX', name: 'アバランチ' },
+  { id: 'chainlink', sym: 'LINK', name: 'チェーンリンク' },
+  { id: 'tron', sym: 'TRX', name: 'トロン' }
+];
+var DEFAULT_COINS = ['bitcoin', 'ethereum', 'ripple', 'solana'];
+var STORAGE_KEY = 'cryptonews_ticker_coins';
+
+function getSelectedCoins() {
+  try {
+    var saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    if (Array.isArray(saved) && saved.length > 0) return saved;
+  } catch (e) {}
+  return DEFAULT_COINS.slice();
+}
+
+function fmtUSD(v) {
+  if (v >= 1) return '$' + v.toLocaleString('en-US', { maximumFractionDigits: 2 });
+  return '$' + v.toLocaleString('en-US', { maximumFractionDigits: 6 });
+}
+function fmtJPY(v) {
+  if (v >= 1) return '¥' + Math.round(v).toLocaleString('ja-JP');
+  return '¥' + v.toLocaleString('ja-JP', { maximumFractionDigits: 4 });
+}
+
+async function loadPrices() {
+  var track = document.getElementById('ticker-track');
+  var ids = getSelectedCoins();
+  try {
+    var url = 'https://api.coingecko.com/api/v3/simple/price?ids=' + ids.join(',') +
+      '&vs_currencies=usd,jpy&include_24hr_change=true';
+    var res = await fetch(url);
+    if (!res.ok) throw new Error('price fetch failed');
+    var data = await res.json();
+    var parts = [];
+    ids.forEach(function (id) {
+      var info = COIN_CATALOG.filter(function (c) { return c.id === id; })[0];
+      var d = data[id];
+      if (!info || !d) return;
+      var chg = d.usd_24h_change;
+      var chgCls = chg >= 0 ? 'tk-up' : 'tk-down';
+      var chgTxt = (chg >= 0 ? '+' : '') + (chg != null ? chg.toFixed(2) : '0.00') + '%';
+      parts.push(
+        '<span class="tk-item">' +
+        '<span class="tk-sym">' + info.sym + '</span>' +
+        '<span class="tk-usd">' + fmtUSD(d.usd) + '</span>' +
+        '<span class="tk-jpy">' + fmtJPY(d.jpy) + '</span>' +
+        '<span class="tk-chg ' + chgCls + '">' + chgTxt + '</span>' +
+        '</span>'
+      );
+    });
+    if (parts.length === 0) {
+      track.innerHTML = '<span class="tk-item"><span class="tk-usd">価格を表示できませんでした</span></span>';
+      return;
     }
-    function escapeHtml(s) {
-      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    // スムーズなループのため2回繰り返す
+    var html = parts.join('');
+    track.innerHTML = html + html;
+  } catch (e) {
+    track.innerHTML = '<span class="tk-item"><span class="tk-usd">価格の読み込みに失敗しました</span></span>';
+  }
+}
+
+/* ===== 銘柄選択モーダル ===== */
+function openModal() {
+  var list = document.getElementById('coin-list');
+  var selected = getSelectedCoins();
+  list.innerHTML = COIN_CATALOG.map(function (c) {
+    var checked = selected.indexOf(c.id) !== -1 ? 'checked' : '';
+    return '<label class="coin-opt"><input type="checkbox" value="' + c.id + '" ' + checked + '>' +
+      c.sym + ' <span style="color:#888;font-size:0.8rem;margin-left:0.3rem;">' + c.name + '</span></label>';
+  }).join('');
+  document.getElementById('modal-overlay').classList.add('open');
+}
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+}
+function saveModal() {
+  var checks = document.querySelectorAll('#coin-list input[type=checkbox]:checked');
+  var ids = Array.prototype.map.call(checks, function (c) { return c.value; });
+  if (ids.length === 0) { ids = DEFAULT_COINS.slice(); }
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(ids)); } catch (e) {}
+  closeModal();
+  loadPrices();
+}
+
+document.getElementById('ticker-edit').addEventListener('click', openModal);
+document.getElementById('modal-cancel').addEventListener('click', closeModal);
+document.getElementById('modal-save').addEventListener('click', saveModal);
+document.getElementById('modal-overlay').addEventListener('click', function (e) {
+  if (e.target === this) closeModal();
+});
+
+loadPrices();
+setInterval(loadPrices, 120000); // 2分ごとに価格更新
+
+/* ===== ニュース ===== */
+async function loadNews() {
+  var grid = document.getElementById('news-grid');
+  var meta = document.getElementById('news-meta');
+  try {
+    var res = await fetch('news.json?t=' + Date.now());
+    if (!res.ok) throw new Error('fetch failed');
+    var data = await res.json();
+    var items = data.items || [];
+    if (items.length === 0) {
+      grid.innerHTML = '<div class="error">現在表示できるニュースがありません。</div>';
+      meta.textContent = '';
+      return;
     }
-    loadNews();
-  </script>
+    if (data.updatedAt) {
+      var d = new Date(data.updatedAt);
+      meta.textContent = '最終更新：' + d.toLocaleString('ja-JP') + '（' + items.length + '件）';
+    }
+    grid.innerHTML = items.map(function (it) {
+      var title = escapeHtml(it.title);
+      var link = encodeURI(it.link);
+      var source = escapeHtml(it.source || '');
+      return '<article class="card">' +
+        '<span class="cat">暗号資産</span>' +
+        '<h2><a href="' + link + '" target="_blank" rel="noopener noreferrer">' + title + '</a></h2>' +
+        '<div class="source">出典：<a href="' + link + '" target="_blank" rel="noopener noreferrer">' + source + '</a></div>' +
+        '</article>';
+    }).join('');
+  } catch (e) {
+    grid.innerHTML = '<div class="error">ニュースの読み込みに失敗しました。時間をおいて再度お試しください。</div>';
+    meta.textContent = '';
+  }
+}
+function escapeHtml(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+loadNews();
+</script>
 </body>
 </html>
