@@ -6,41 +6,42 @@
   <title>Crypto News - 暗号資産ニュース</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; line-height: 1.7; color: #1a1a1a; background: #f7f8fa; }
+    body { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; background: #f5f6f8; color: #1a1a1a; line-height: 1.7; }
     a { color: #1f6feb; text-decoration: none; }
     a:hover { text-decoration: underline; }
     header { background: #0d1117; color: #fff; padding: 1rem 0; }
-    .container { max-width: 1080px; margin: 0 auto; padding: 0 1rem; }
-    header .container { display: flex; align-items: center; justify-content: space-between; }
-    .logo { font-size: 1.4rem; font-weight: 700; color: #fff; }
+    .container { max-width: 880px; margin: 0 auto; padding: 0 1rem; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.5rem; font-weight: bold; color: #fff; }
     .logo span { color: #f7931a; }
     nav a { color: #c9d1d9; margin-left: 1.2rem; font-size: 0.95rem; }
-    nav a:hover { color: #fff; }
-    .hero { background: #fff; border-bottom: 1px solid #e1e4e8; padding: 2rem 0; }
-    .hero h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-    .hero p { color: #57606a; }
+    .hero { background: #161b22; color: #fff; padding: 2.5rem 0; text-align: center; }
+    .hero h1 { font-size: 1.6rem; margin-bottom: 0.6rem; }
+    .hero p { color: #c9d1d9; font-size: 0.95rem; }
     main { padding: 2rem 0; }
-    .news-grid { display: grid; grid-template-columns: 1fr; gap: 1.2rem; }
-    .card { background: #fff; border: 1px solid #e1e4e8; border-radius: 10px; overflow: hidden; }
-    .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
-    .card-body { padding: 1rem 1.2rem 1.3rem; }
-    .card .cat { display: inline-block; font-size: 0.75rem; color: #f7931a; font-weight: 600; margin-bottom: 0.4rem; }
-    .card h2 { font-size: 1.05rem; margin-bottom: 0.5rem; line-height: 1.4; }
-    .card p { font-size: 0.9rem; color: #57606a; margin-bottom: 0.8rem; }
-    .card .source { font-size: 0.78rem; color: #8b949e; }
+    .news-meta { font-size: 0.85rem; color: #666; margin-bottom: 1.2rem; }
+    .news-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    .card { background: #fff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.2rem 1.4rem; transition: box-shadow 0.2s; }
+    .card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    .card .cat { display: inline-block; background: #f7931a; color: #fff; font-size: 0.72rem; padding: 0.15rem 0.6rem; border-radius: 4px; margin-bottom: 0.6rem; }
+    .card h2 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .card h2 a { color: #1a1a1a; }
+    .card h2 a:hover { color: #f7931a; text-decoration: none; }
+    .card .source { font-size: 0.82rem; color: #888; }
+    .card .source a { color: #1f6feb; }
+    .loading, .error { text-align: center; color: #888; padding: 2rem 0; }
     footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem; font-size: 0.85rem; }
-    footer .disclaimer { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 1.2rem; }
-    footer .disclaimer strong { color: #f7931a; }
-    footer .copy { color: #8b949e; }
+    .disclaimer { background: #161b22; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 1.2rem; color: #8b949e; font-size: 0.8rem; }
+    .copy { text-align: center; color: #6e7681; }
   </style>
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container header-inner">
       <div class="logo">Crypto<span>News</span></div>
       <nav>
         <a href="#">ホーム</a>
-        <a href="#">ニュース</a>
+        <a href="#news">ニュース</a>
         <a href="#">相場</a>
         <a href="#">運営情報</a>
       </nav>
@@ -50,37 +51,15 @@
   <section class="hero">
     <div class="container">
       <h1>暗号資産の最新ニュースをお届け</h1>
-      <p>ビットコイン、イーサリアム、規制動向まで、暗号資産に関する情報をわかりやすくまとめます。</p>
+      <p>ビットコイン・イーサリアム・規制動向など、暗号資産に関する情報をまとめてチェック</p>
     </div>
   </section>
 
-  <main>
+  <main id="news">
     <div class="container">
-      <div class="news-grid">
-        <article class="card">
-          <div class="card-body">
-            <span class="cat">暗号資産</span>
-            <h2><a href="#">【見出しサンプル】自分で書いたニュース見出しが入ります</a></h2>
-            <p>ここにニュースの要約を自分の言葉で短く記載します。事実を再構成して説明します。</p>
-            <div class="source">出典：<a href="#" target="_blank" rel="noopener">メディア名</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-body">
-            <span class="cat">暗号資産</span>
-            <h2><a href="#">【見出しサンプル】オリジナルの見出しを2番目の記事に</a></h2>
-            <p>ニュースの概要を自分の文章で記述します。原文の丸写しは避けます。</p>
-            <div class="source">出典：<a href="#" target="_blank" rel="noopener">メディア名</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-body">
-            <span class="cat">暗号資産</span>
-            <h2><a href="#">【見出しサンプル】3番目の記事見出し</a></h2>
-            <p>事実情報を要約し、詳細は出典リンクから確認できるようにします。</p>
-            <div class="source">出典：<a href="#" target="_blank" rel="noopener">メディア名</a></div>
-          </div>
-        </article>
+      <div class="news-meta" id="news-meta">最新ニュースを読み込み中...</div>
+      <div class="news-grid" id="news-grid">
+        <div class="loading">読み込んでいます...</div>
       </div>
     </div>
   </main>
@@ -88,11 +67,49 @@
   <footer>
     <div class="container">
       <div class="disclaimer">
-        <strong>免責事項</strong><br>
-        本サイトは暗号資産に関する情報提供を目的としており、特定の金融商品の購入や投資を勧誘するものではありません。掲載する情報は最新・正確であるよう努めていますが、その完全性を保証するものではありません。投資に関する最終的な判断は、ご自身の責任と判断で行ってください。
+        <strong>免責事項：</strong>当サイトは暗号資産に関する情報提供を目的としたものであり、特定の暗号資産への投資の勧誘・推奨を行うものではありません。掲載している見出しは各提供元メディアの公式配信（RSS）に基づくものであり、記事の詳細は各リンク先の提供元サイトでご確認ください。投資判断はご自身の責任において行ってください。
       </div>
-      <div class="copy">&copy; 2026 CryptoNews. All rights reserved.</div>
+      <div class="copy">© 2026 CryptoNews. All rights reserved.</div>
     </div>
   </footer>
+
+  <script>
+    async function loadNews() {
+      const grid = document.getElementById('news-grid');
+      const meta = document.getElementById('news-meta');
+      try {
+        const res = await fetch('news.json?t=' + Date.now());
+        if (!res.ok) throw new Error('fetch failed');
+        const data = await res.json();
+        const items = data.items || [];
+        if (items.length === 0) {
+          grid.innerHTML = '<div class="error">現在表示できるニュースがありません。</div>';
+          meta.textContent = '';
+          return;
+        }
+        if (data.updatedAt) {
+          const d = new Date(data.updatedAt);
+          meta.textContent = '最終更新：' + d.toLocaleString('ja-JP') + '（' + items.length + '件）';
+        }
+        grid.innerHTML = items.map(function (it) {
+          var title = escapeHtml(it.title);
+          var link = encodeURI(it.link);
+          var source = escapeHtml(it.source || '');
+          return '<article class="card">' +
+            '<span class="cat">暗号資産</span>' +
+            '<h2><a href="' + link + '" target="_blank" rel="noopener noreferrer">' + title + '</a></h2>' +
+            '<div class="source">出典：<a href="' + link + '" target="_blank" rel="noopener noreferrer">' + source + '</a></div>' +
+            '</article>';
+        }).join('');
+      } catch (e) {
+        grid.innerHTML = '<div class="error">ニュースの読み込みに失敗しました。時間をおいて再度お試しください。</div>';
+        meta.textContent = '';
+      }
+    }
+    function escapeHtml(s) {
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+    loadNews();
+  </script>
 </body>
 </html>
