@@ -7,10 +7,11 @@ const FEEDS = [
   { source: 'CoinPost', url: 'https://coinpost.jp/?feed=rss2' },
   { source: 'BITTIMES', url: 'https://bittimes.net/feed' },
   { source: 'CRYPTO TIMES', url: 'https://crypto-times.jp/feed/' },
+  { source: 'CoinTelegraph', url: 'https://jp.cointelegraph.com/rss' },
 ];
 
 const PER_FEED = 12; // 各社から取得する最大件数（フィルター前）
-const MAX_TOTAL = 30; // 最終的に表示する最大件数
+const MAX_TOTAL = 40; // 最終的に表示する最大件数
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 
