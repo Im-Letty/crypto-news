@@ -7,8 +7,7 @@ const FEEDS = [
   { source: 'CoinPost', url: 'https://coinpost.jp/?feed=rss2' },
   { source: 'BITTIMES', url: 'https://bittimes.net/feed' },
   { source: 'CRYPTO TIMES', url: 'https://crypto-times.jp/feed/' },
-  { source: 'CoinTelegraph', url: 'https://cointelegraph.com/rss/tag/japanese' },
-];
+  { source: 'CoinTelegraph', url: 'https://cointelegraph.com/rss' },];
 
 const PER_FEED = 12;
 const MAX_TOTAL = 40;
