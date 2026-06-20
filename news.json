@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-20T14:07:09.235Z",
-  "count": 25,
+  "updatedAt": "2026-06-20T14:11:09.768Z",
+  "count": 33,
   "items": [
     {
       "title": "【今日のマクロ経済ニュース】タカ派FOMCとドル高で金が急落、BTCも上値重く",
@@ -51,10 +51,22 @@
       "source": "BITTIMES"
     },
     {
+      "title": "Philippine SEC signals readiness for RWA tokenization",
+      "link": "https://cointelegraph.com/news/philippine-sec-rwa-tokenization-readiness?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+      "pubDate": "Sat, 20 Jun 2026 07:05:20 GMT",
+      "source": "CoinTelegraph"
+    },
+    {
       "title": "世界最大のBTC財務企業が新たな火種に？巨額売り圧の危機",
       "link": "https://crypto-times.jp/news-could-the-worlds-largest-btc-financial-firm-become-a-new-source-of-trouble/",
       "pubDate": "Sat, 20 Jun 2026 06:23:56 +0000",
       "source": "CRYPTO TIMES"
+    },
+    {
+      "title": "Crypto kidnappers who robbed a Minnesota family of $8M plead guilty",
+      "link": "https://cointelegraph.com/news/crypto-kidnappers-who-robbed-a-minnesota-family-of-8m-plead-guilty?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+      "pubDate": "Sat, 20 Jun 2026 05:12:43 GMT",
+      "source": "CoinTelegraph"
     },
     {
       "title": "全国ビジネス企業年金基金が暗号資産投資へ、2026年度内に開始＝報道",
@@ -99,6 +111,12 @@
       "source": "BITTIMES"
     },
     {
+      "title": "S token drops 5% as 3 former execs resign from Sonic Labs board",
+      "link": "https://cointelegraph.com/news/s-token-drops-5-as-3-former-execs-resign-from-sonic-labs-board?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+      "pubDate": "Sat, 20 Jun 2026 01:41:39 GMT",
+      "source": "CoinTelegraph"
+    },
+    {
       "title": "コインベースL2のBase、最新アップグレード「Beryl」メインネット実装へ",
       "link": "https://coinpost.jp/?p=718620",
       "pubDate": "Sat, 20 Jun 2026 10:20:33 +0900",
@@ -123,10 +141,40 @@
       "source": "CoinPost"
     },
     {
+      "title": "Here’s what happened in crypto today",
+      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+      "pubDate": "Fri, 19 Jun 2026 21:00:00 GMT",
+      "source": "CoinTelegraph"
+    },
+    {
+      "title": "$13B Bitcoin options expiry looms: Will bulls endure more pain in June?",
+      "link": "https://cointelegraph.com/markets/13b-bitcoin-options-expiry-looms-will-bulls-endure-more-pain-in-june?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+      "pubDate": "Fri, 19 Jun 2026 20:57:49 GMT",
+      "source": "CoinTelegraph"
+    },
+    {
       "title": "中東産油国オマーン、強制参加型ビットコインマイニングプールを開設",
       "link": "https://coinpost.jp/?p=718589",
       "pubDate": "Sat, 20 Jun 2026 05:00:04 +0900",
       "source": "CoinPost"
+    },
+    {
+      "title": "Bitcoin traders expect new lows but data cautions against overly bearish bias",
+      "link": "https://cointelegraph.com/markets/bitcoin-eyes-new-yearly-lows-as-traders-warn-not-to-get-too-bearish-here?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+      "pubDate": "Fri, 19 Jun 2026 17:38:09 GMT",
+      "source": "CoinTelegraph"
+    },
+    {
+      "title": "Crypto Biz: Is AI the exit strategy for miners?",
+      "link": "https://cointelegraph.com/news/crypto-biz-ai-exit-strategy-bitcoin-miners?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+      "pubDate": "Fri, 19 Jun 2026 17:03:40 GMT",
+      "source": "CoinTelegraph"
+    },
+    {
+      "title": "Andrew Tate loses nearly $86,000 longing and shorting Bitcoin",
+      "link": "https://cointelegraph.com/markets/andrew-tate-loses-nearly-86000-longing-and-shorting-bitcoin?utm_source=rss&utm_medium=rss&utm_campaign=rss",
+      "pubDate": "Fri, 19 Jun 2026 15:05:10 GMT",
+      "source": "CoinTelegraph"
     },
     {
       "title": "米国株連動トークンを担保に使えるperp DEX「Nado」の仕組み",
