@@ -56,15 +56,8 @@ footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem;
 .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 100; align-items: center; justify-content: center; padding: 1rem; }
 .modal-overlay.open { display: flex; }
 .modal { background: #fff; border-radius: 10px; max-width: 460px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 1.4rem; }
-.modal h3 { font-size: 1.1rem; margin-bottom: 0.3rem; }
-.modal p.note { font-size: 0.8rem; color: #888; margin-bottom: 1rem; }
+.modal h3 { font-size: 1.1rem; margin-bottom: 0.8rem; }
 .modal h4 { font-size: 0.85rem; color: #444; margin: 1rem 0 0.5rem; }
-
-/* 選択中チップ */
-.selected-box { display: flex; flex-wrap: wrap; gap: 0.4rem; min-height: 2rem; margin-bottom: 0.3rem; }
-.chip { display: inline-flex; align-items: center; gap: 0.3rem; background: #fff3e0; border: 1px solid #f7931a; color: #b35900; border-radius: 999px; padding: 0.2rem 0.6rem; font-size: 0.82rem; }
-.chip button { background: none; border: none; color: #b35900; cursor: pointer; font-size: 0.95rem; line-height: 1; padding: 0; }
-.chip button:hover { color: #f85149; }
 .count-note { font-size: 0.75rem; color: #999; margin-bottom: 0.5rem; }
 .count-note.full { color: #f85149; }
 
@@ -139,9 +132,7 @@ footer { background: #0d1117; color: #c9d1d9; padding: 2rem 0; margin-top: 2rem;
 <div class="modal-overlay" id="modal-overlay">
 <div class="modal">
 <h3>表示する銘柄を選択</h3>
-<p class="note">ティッカーに流す暗号資産を選べます（最大6銘柄）。</p>
 
-<div class="selected-box" id="selected-box"></div>
 <div class="count-note" id="count-note"></div>
 
 <div class="quick-list" id="quick-list"></div>
@@ -250,29 +241,15 @@ var workingSelection = [];
 var coinListCache = null;
 var searchTimer = null;
 
-function renderSelected() {
-var box = document.getElementById('selected-box');
+function updateCount() {
 var note = document.getElementById('count-note');
-box.innerHTML = workingSelection.map(function (id) {
-return '<span class="chip">' + symFor(id) +
-'<button type="button" data-id="' + id + '" aria-label="削除">×</button></span>';
-}).join('');
 if (workingSelection.length >= MAX_COINS) {
 note.textContent = '上限の' + MAX_COINS + '銘柄に達しています。追加するには他を外してください。';
 note.className = 'count-note full';
 } else {
-note.textContent = workingSelection.length + ' / ' + MAX_COINS + ' 銘柄';
+note.textContent = workingSelection.length + ' / ' + MAX_COINS + ' 銘柄を選択中';
 note.className = 'count-note';
 }
-Array.prototype.forEach.call(box.querySelectorAll('button'), function (b) {
-b.addEventListener('click', function () {
-var id = this.getAttribute('data-id');
-workingSelection = workingSelection.filter(function (x) { return x !== id; });
-renderSelected();
-renderQuick();
-renderSearchResults(document.getElementById('search-box').value);
-});
-});
 }
 
 function addCoin(id, sym, name) {
@@ -280,7 +257,7 @@ if (workingSelection.indexOf(id) !== -1) return;
 if (workingSelection.length >= MAX_COINS) return;
 if (sym) COIN_LABELS[id] = { sym: sym, name: name || sym };
 workingSelection.push(id);
-renderSelected();
+updateCount();
 renderQuick();
 }
 
@@ -299,8 +276,9 @@ workingSelection = workingSelection.filter(function (x) { return x !== id; });
 } else {
 addCoin(id, this.getAttribute('data-sym'), this.getAttribute('data-name'));
 }
-renderSelected();
+updateCount();
 renderQuick();
+renderSearchResults(document.getElementById('search-box').value);
 });
 });
 }
@@ -345,7 +323,7 @@ Array.prototype.forEach.call(box.querySelectorAll('.result-opt'), function (el) 
 el.addEventListener('click', function () {
 var id = this.getAttribute('data-id');
 if (workingSelection.indexOf(id) !== -1) return;
-if (workingSelection.length >= MAX_COINS) { renderSelected(); return; }
+if (workingSelection.length >= MAX_COINS) { updateCount(); return; }
 addCoin(id, this.getAttribute('data-sym'), this.getAttribute('data-name'));
 renderSearchResults(document.getElementById('search-box').value);
 });
@@ -354,7 +332,7 @@ renderSearchResults(document.getElementById('search-box').value);
 
 function openModal() {
 workingSelection = getSelectedCoins();
-renderSelected();
+updateCount();
 renderQuick();
 document.getElementById('search-box').value = '';
 document.getElementById('search-results').innerHTML = '';
