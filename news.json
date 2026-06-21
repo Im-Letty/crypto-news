@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-06-20T15:55:31.771Z",
+  "updatedAt": "2026-06-21T02:48:54.075Z",
   "count": 3,
   "items": [
+    {
+      "title": "週刊仮想通貨ニュース（6/19）｜米FOMCのタカ派シフト・BTC大口保有が過去最高・リップル投資の動向まとめ",
+      "link": "https://coinpost.jp/?p=718319",
+      "pubDate": "Sun, 21 Jun 2026 09:25:00 +0900",
+      "source": "CoinPost"
+    },
     {
       "title": "ビットコインETFが純流出8220万ドル、投資家心理に変化",
       "link": "https://crypto-times.jp/news-bitcoin-etf-experiences-net-outflow-of-82-2-million/",
@@ -13,12 +19,6 @@
       "link": "https://bittimes.net/news/224799.html",
       "pubDate": "Sat, 20 Jun 2026 03:54:04 +0000",
       "source": "BITTIMES"
-    },
-    {
-      "title": "米フランクリン・テンプルトン、配当をビットコインへ再投資するETFをSEC申請",
-      "link": "https://coinpost.jp/?p=718595",
-      "pubDate": "Sat, 20 Jun 2026 06:15:31 +0900",
-      "source": "CoinPost"
     }
   ]
 }
