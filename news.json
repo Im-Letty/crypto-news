@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-06-27T02:25:34.564Z",
+  "updatedAt": "2026-06-28T02:37:42.584Z",
   "count": 3,
   "items": [
     {
-      "title": "【今日の仮想通貨ニュース】BTC暴落で大量清算。イーサリアム財団が従業員大量解雇",
-      "link": "https://crypto-times.jp/news-todays-cryptocurrency-news-june-25/",
-      "pubDate": "Thu, 25 Jun 2026 09:24:53 +0000",
-      "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "Bitcoin ETFs post June's biggest daily outflows as BTC falls below $60K",
-      "link": "https://cointelegraph.com/news/bitcoin-etfs-biggest-outflows-june-btc-below-60k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Fri, 26 Jun 2026 09:36:34 +0000",
-      "source": "CoinTelegraph"
+      "title": "セイラー氏「ビットコイン長期戦略は不変」株価急落でも堅持を表明",
+      "link": "https://bittimes.net/news/225011.html",
+      "pubDate": "Sat, 27 Jun 2026 06:34:57 +0000",
+      "source": "BITTIMES"
     },
     {
       "title": "リップルCEO、ストラテジーのビットコイン購入手法を疑問視",
       "link": "https://coinpost.jp/?p=720448",
       "pubDate": "Sat, 27 Jun 2026 06:45:12 +0900",
       "source": "CoinPost"
+    },
+    {
+      "title": "リップル基盤のステーブルコインが1カ月で2倍｜AIエージェント決済が次の狙い",
+      "link": "https://crypto-times.jp/news-ripple-based-stablecoin-doubles-in-one-month/",
+      "pubDate": "Sat, 27 Jun 2026 07:05:00 +0000",
+      "source": "CRYPTO TIMES"
     }
   ]
 }
