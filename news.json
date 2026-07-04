@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-07-03T02:03:20.375Z",
+  "updatedAt": "2026-07-04T02:00:57.350Z",
   "count": 3,
   "items": [
     {
-      "title": "ビットコインETF、上場来最悪の月間実績｜6月に7200億円流出",
-      "link": "https://crypto-times.jp/news-bitcoin-etfs-post-worst-monthly-performance-since-inception/",
-      "pubDate": "Wed, 01 Jul 2026 08:35:47 +0000",
-      "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "【今日のマクロ経済ニュース】止まらない円安・日経最高値圏。BTCの資金流出止まらず",
-      "link": "https://crypto-times.jp/news-macroeconomic-news-for-july-1st/",
-      "pubDate": "Wed, 01 Jul 2026 06:36:08 +0000",
-      "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "ビットコイン・イーサリアムの取引所流入急増、ボラティリティ拡大の兆候か＝クリプトクアント",
-      "link": "https://coinpost.jp/?p=721829",
-      "pubDate": "Fri, 03 Jul 2026 09:45:55 +0900",
+      "title": "ビットコイン現物ETF、純流入2.22億ドル　10日連続流出から転換",
+      "link": "https://coinpost.jp/?p=721960",
+      "pubDate": "Fri, 03 Jul 2026 14:47:07 +0900",
       "source": "CoinPost"
+    },
+    {
+      "title": "ビットコイン現物ETFに10日ぶり純流入、米雇用統計下振れ受け利上げ観測後退",
+      "link": "https://coinpost.jp/?p=722080",
+      "pubDate": "Sat, 04 Jul 2026 06:20:57 +0900",
+      "source": "CoinPost"
+    },
+    {
+      "title": "US spot Bitcoin ETFs top $200M in daily inflows for first time since May",
+      "link": "https://cointelegraph.com/news/spot-bitcoin-etfs-222-million-daily-inflow-reverse?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Fri, 03 Jul 2026 07:56:40 +0000",
+      "source": "CoinTelegraph"
     }
   ]
 }
