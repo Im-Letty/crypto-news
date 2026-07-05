@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T02:00:57.350Z",
+  "updatedAt": "2026-07-05T02:09:19.293Z",
   "count": 3,
   "items": [
     {
@@ -9,16 +9,16 @@
       "source": "CoinPost"
     },
     {
+      "title": "Bitcoin, Ether extend relief rallies as extreme fear meets renewed ETF buying",
+      "link": "https://cointelegraph.com/markets/bitcoin-ether-extend-relief-rallies-as-extreme-fear-meets-renewed-etf-buying?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Sat, 04 Jul 2026 03:54:18 +0000",
+      "source": "CoinTelegraph"
+    },
+    {
       "title": "ビットコイン現物ETFに10日ぶり純流入、米雇用統計下振れ受け利上げ観測後退",
       "link": "https://coinpost.jp/?p=722080",
       "pubDate": "Sat, 04 Jul 2026 06:20:57 +0900",
       "source": "CoinPost"
-    },
-    {
-      "title": "US spot Bitcoin ETFs top $200M in daily inflows for first time since May",
-      "link": "https://cointelegraph.com/news/spot-bitcoin-etfs-222-million-daily-inflow-reverse?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Fri, 03 Jul 2026 07:56:40 +0000",
-      "source": "CoinTelegraph"
     }
   ]
 }
