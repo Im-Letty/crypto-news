@@ -1,13 +1,7 @@
 {
-  "updatedAt": "2026-07-10T02:01:40.619Z",
+  "updatedAt": "2026-07-11T01:49:12.274Z",
   "count": 3,
   "items": [
-    {
-      "title": "Bitcoin ETFs end 'most overwhelming' $2.7B sell-off amid new $85M net outflow",
-      "link": "https://cointelegraph.com/markets/bitcoin-etfs-end-most-overwhelming-sell-off-amid-new-85m-net-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Thu, 09 Jul 2026 09:58:07 +0000",
-      "source": "CoinTelegraph"
-    },
     {
       "title": "原油急騰でもビットコインは静観、7月に集中する3つの試練とは",
       "link": "https://crypto-times.jp/news-bitcoin-remains-calm-despite-the-surge-in-crude-oil-prices/",
@@ -15,9 +9,15 @@
       "source": "CRYPTO TIMES"
     },
     {
-      "title": "ビットコイン、7月は季節的に強気傾向も反発は一時的か＝クリプトクアント",
-      "link": "https://coinpost.jp/?p=723519",
-      "pubDate": "Fri, 10 Jul 2026 09:50:04 +0900",
+      "title": "ビットワイズの仮想通貨指数15.4％安　ETFも流出最大",
+      "link": "https://coinpost.jp/?p=723697",
+      "pubDate": "Fri, 10 Jul 2026 14:25:41 +0900",
+      "source": "CoinPost"
+    },
+    {
+      "title": "米上場エンペリー・デジタル、AIデータセンター資金調達のため1400BTC売却",
+      "link": "https://coinpost.jp/?p=723910",
+      "pubDate": "Sat, 11 Jul 2026 06:55:30 +0900",
       "source": "CoinPost"
     }
   ]
