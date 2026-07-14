@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-07-13T01:54:04.221Z",
+  "updatedAt": "2026-07-14T01:41:10.625Z",
   "count": 3,
   "items": [
+    {
+      "title": "リップル、複数指標で需要減速｜ETF流出・先物縮小・ウォレット低調",
+      "link": "https://crypto-times.jp/news-ripple-demand-slows-across-multiple-indicators/",
+      "pubDate": "Mon, 13 Jul 2026 05:55:14 +0000",
+      "source": "CRYPTO TIMES"
+    },
     {
       "title": "仮想通貨ニュース週間まとめ「ETH・クラリティ法案・ETF解禁」などの注目記事",
       "link": "https://bittimes.net/news/225479.html",
@@ -9,16 +15,10 @@
       "source": "BITTIMES"
     },
     {
-      "title": "週刊仮想通貨ニュース（7/10）｜ストラテジーのBTC売却・BTC相場分析・ETH開発計画の動向まとめ",
-      "link": "https://coinpost.jp/?p=723557",
-      "pubDate": "Sun, 12 Jul 2026 09:25:22 +0900",
-      "source": "CoinPost"
-    },
-    {
-      "title": "【今日のマクロ経済ニュース】SKハイニックスが上場初日+13%。BTCが6.4万ドルを回復",
-      "link": "https://crypto-times.jp/news-todays-macroeconomic-news-july-11/",
-      "pubDate": "Sat, 11 Jul 2026 09:22:15 +0000",
-      "source": "CRYPTO TIMES"
+      "title": "Bitcoin ETFs draw $197M, snap 8-week outflow streak",
+      "link": "https://cointelegraph.com/news/bitcoin-etfs-draw-197m-snap-8-week-outflow-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Mon, 13 Jul 2026 01:49:17 +0000",
+      "source": "CoinTelegraph"
     }
   ]
 }
