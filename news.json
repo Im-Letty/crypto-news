@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-07-22T01:48:21.578Z",
+  "updatedAt": "2026-07-23T01:55:13.771Z",
   "count": 3,
   "items": [
     {
-      "title": "コインシェアーズ、欧州市場に参入　ビットコインマイニングETFを上場",
-      "link": "https://coinpost.jp/?p=726331",
-      "pubDate": "Wed, 22 Jul 2026 05:00:02 +0900",
-      "source": "CoinPost"
+      "title": "BIS「従来規制ではステーブルコインを止められない」資本流出を警告",
+      "link": "https://bittimes.net/news/225834.html",
+      "pubDate": "Wed, 22 Jul 2026 05:15:20 +0000",
+      "source": "BITTIMES"
     },
     {
-      "title": "ステーブルコイン流出35日連続、ビットコイン需要不足映す＝アナリスト",
-      "link": "https://coinpost.jp/?p=726278",
-      "pubDate": "Tue, 21 Jul 2026 17:21:52 +0900",
-      "source": "CoinPost"
-    },
-    {
-      "title": "CoinShares debuts Bitcoin mining ETF in Europe entrance",
-      "link": "https://cointelegraph.com/news/coinshares-debuts-bitcoin-mining-ucits-etf-in-europe?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Tue, 21 Jul 2026 13:34:26 +0000",
+      "title": "Bitcoin analysis eyes ‘serious volume’ after Binance sees 9K BTC daily outflow",
+      "link": "https://cointelegraph.com/markets/bitcoin-analysis-eyes-serious-volume-after-binance-sees-9k-btc-daily-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Wed, 22 Jul 2026 11:55:21 +0000",
       "source": "CoinTelegraph"
+    },
+    {
+      "title": "ステーブルコイン流入、資本規制を無効化か＝BIS分析",
+      "link": "https://coinpost.jp/?p=726661",
+      "pubDate": "Thu, 23 Jul 2026 10:34:56 +0900",
+      "source": "CoinPost"
     }
   ]
 }
