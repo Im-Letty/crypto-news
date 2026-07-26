@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-07-25T01:51:08.481Z",
+  "updatedAt": "2026-07-26T01:54:49.498Z",
   "count": 3,
   "items": [
+    {
+      "title": "金商法改正まとめ｜仮想通貨の税率20%・BTC ETF・SNS規制",
+      "link": "https://crypto-times.jp/news-summary-of-amendments-to-the-financial-instruments-and-exchange-act/",
+      "pubDate": "Sun, 26 Jul 2026 01:49:03 +0000",
+      "source": "CRYPTO TIMES"
+    },
     {
       "title": "日本版ビットコインETF試算の現実味｜家計資産のわずか0.13%で3兆円",
       "link": "https://crypto-times.jp/news-japanese-bitcoin-etf-market-may-near-3-trillion-yen/",
@@ -9,16 +15,10 @@
       "source": "CRYPTO TIMES"
     },
     {
-      "title": "上場20社がビットコイン財務戦略を撤退・縮小｜完全撤退は9社",
-      "link": "https://crypto-times.jp/news-20-listed-companies-withdraw-from-or-scale-back-their-btc-financial-strategies/",
-      "pubDate": "Fri, 24 Jul 2026 23:45:14 +0000",
-      "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "ビットコインは「マクロ資産」へ、保有者の大規模再編も進行＝バイナンスの2026年上半期レポート",
-      "link": "https://coinpost.jp/?p=727083",
-      "pubDate": "Fri, 24 Jul 2026 14:30:47 +0900",
-      "source": "CoinPost"
+      "title": "Ethereum ETFs close week in red, end 5-day inflow streak",
+      "link": "https://cointelegraph.com/markets/ethereum-etfs-week-red-end-inflow-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Sat, 25 Jul 2026 07:40:35 +0000",
+      "source": "CoinTelegraph"
     }
   ]
 }
