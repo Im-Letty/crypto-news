@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-07-30T01:29:11.882Z",
+  "updatedAt": "2026-07-31T01:56:36.720Z",
   "count": 3,
   "items": [
     {
-      "title": "Bitcoin ETFs extend outflow streak as BTC fails to hold $65K",
-      "link": "https://cointelegraph.com/markets/bitcoin-etf-extend-outflow-streak-btc-slips-below-65k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Wed, 29 Jul 2026 07:16:47 +0000",
+      "title": "ビットコインを支えた3つの需要が同時失速｜ETF流出5億ドル超",
+      "link": "https://crypto-times.jp/news-three-sources-of-demand-underpinning-bitcoin-have-stalled-simultaneously/",
+      "pubDate": "Thu, 30 Jul 2026 02:54:35 +0000",
+      "source": "CRYPTO TIMES"
+    },
+    {
+      "title": "【今日の仮想通貨】日銀利上げでBTC2割超下落の過去。日立がステーブルコインを含む監視サービス開始",
+      "link": "https://crypto-times.jp/news-todays-cryptocurrency-news-july-30/",
+      "pubDate": "Thu, 30 Jul 2026 08:12:21 +0000",
+      "source": "CRYPTO TIMES"
+    },
+    {
+      "title": "Bitcoin ETF inflows return as Ether funds slip into outflows",
+      "link": "https://cointelegraph.com/markets/bitcoin-etf-inflows-return-ether-funds-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Thu, 30 Jul 2026 07:05:23 +0000",
       "source": "CoinTelegraph"
-    },
-    {
-      "title": "モルガンS、仮想通貨ETP「ETH・SOL」追加上場｜最安0.14%で攻勢",
-      "link": "https://bittimes.net/news/226089.html",
-      "pubDate": "Wed, 29 Jul 2026 05:42:53 +0000",
-      "source": "BITTIMES"
-    },
-    {
-      "title": "JPX総研、BTC・ETH指数の運営に参画、円建て価格の「共通基準」整備へ",
-      "link": "https://bittimes.net/news/226102.html",
-      "pubDate": "Wed, 29 Jul 2026 04:34:13 +0000",
-      "source": "BITTIMES"
     }
   ]
 }
