@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-08-01T01:57:30.635Z",
+  "updatedAt": "2026-08-02T01:53:46.636Z",
   "count": 3,
   "items": [
     {
-      "title": "Bitcoin ETFs post $233M inflows, pushing week back into the green",
-      "link": "https://cointelegraph.com/markets/bitcoin-etfs-inflows-week-back-green?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Fri, 31 Jul 2026 06:46:23 +0000",
-      "source": "CoinTelegraph"
-    },
-    {
-      "title": "スペイン銀行大手サンタンデール、7億円相当のビットコインETFを保有",
-      "link": "https://bittimes.net/news/226211.html",
-      "pubDate": "Fri, 31 Jul 2026 06:15:35 +0000",
+      "title": "オリコポイントからBTC・ETH・XRPに交換可能に、SBI VCトレードと連携",
+      "link": "https://bittimes.net/news/226265.html",
+      "pubDate": "Sat, 01 Aug 2026 02:14:35 +0000",
       "source": "BITTIMES"
     },
     {
-      "title": "RWA perpetual futures volume nears Bitcoin on Hyperliquid, Binance",
-      "link": "https://cointelegraph.com/markets/rwa-perpetual-futures-bitcoin-hyperliquid-binance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Fri, 31 Jul 2026 08:29:51 +0000",
+      "title": "週刊仮想通貨ニュース（7/31）｜クラリティー法の動向・ETHとSOLのETP提供・XRP運用戦略のまとめ",
+      "link": "https://coinpost.jp/?p=728969",
+      "pubDate": "Sun, 02 Aug 2026 09:25:00 +0900",
+      "source": "CoinPost"
+    },
+    {
+      "title": "Bitcoin ETFs end July in the green despite late-month selling",
+      "link": "https://cointelegraph.com/markets/bitcoin-etfs-july-green-despite-late-month-selling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Sat, 01 Aug 2026 07:23:07 +0000",
       "source": "CoinTelegraph"
     }
   ]
