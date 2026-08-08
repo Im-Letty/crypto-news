@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-08-07T02:09:25.447Z",
+  "updatedAt": "2026-08-08T00:56:53.632Z",
   "count": 3,
   "items": [
     {
-      "title": "Bitcoin ETF inflows surge after Coldcard hack, but link is unclear: Bloomberg analyst",
-      "link": "https://cointelegraph.com/news/bitcoin-etf-inflows-coldcard-hack-bloomberg-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Thu, 06 Aug 2026 18:17:57 +0000",
-      "source": "CoinTelegraph"
+      "title": "ビットコインには2億ドル流入もソラナETFはゼロ｜5営業日連続で停止",
+      "link": "https://crypto-times.jp/news-200-million-flows-into-btc-while-solana-etf-sees-zero-inflows/",
+      "pubDate": "Thu, 06 Aug 2026 03:26:02 +0000",
+      "source": "CRYPTO TIMES"
     },
     {
-      "title": "Coldcard hackers transfer 64 BTC and 200 ETH to cryptocurrency mixers",
-      "link": "https://cointelegraph.com/news/coldcard-hackers-64-btc-200-eth-cryptocurrency-mixers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Thu, 06 Aug 2026 11:26:00 +0000",
-      "source": "CoinTelegraph"
-    },
-    {
-      "title": "「不正送金に包囲」暗号資産業界団体に詐欺対策11項目を要請｜金融庁・警察庁",
-      "link": "https://bittimes.net/news/226553.html",
-      "pubDate": "Thu, 06 Aug 2026 08:53:52 +0000",
+      "title": "BTC・ETH・USDCを基幹システム内で管理｜米信用組合など80団体が検証へ",
+      "link": "https://bittimes.net/news/226575.html",
+      "pubDate": "Fri, 07 Aug 2026 03:22:42 +0000",
       "source": "BITTIMES"
+    },
+    {
+      "title": "【今日の仮想通貨】AI攻撃でBTCブリッジが停止。金融庁が「暗号資産・ステーブルコイン課」新設",
+      "link": "https://crypto-times.jp/news-todays-cryptocurrency-news-august-5/",
+      "pubDate": "Wed, 05 Aug 2026 10:15:42 +0000",
+      "source": "CRYPTO TIMES"
     }
   ]
 }
