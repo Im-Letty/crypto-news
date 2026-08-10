@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T00:59:58.037Z",
+  "updatedAt": "2026-08-10T01:01:56.893Z",
   "count": 3,
   "items": [
     {
@@ -9,15 +9,15 @@
       "source": "CoinTelegraph"
     },
     {
+      "title": "仮想通貨ETFの裏側に変化、1日100億ドルの新勢力がSEC登録",
+      "link": "https://crypto-times.jp/news-wintermute-secures-a-foothold-in-the-u-s-stock-market/",
+      "pubDate": "Sat, 08 Aug 2026 12:30:59 +0000",
+      "source": "CRYPTO TIMES"
+    },
+    {
       "title": "ハッキングされたビットコイン専門ウォレットのコールドカード、データの取扱方針を一時変更",
       "link": "https://coinpost.jp/?p=730580",
       "pubDate": "Sat, 08 Aug 2026 08:22:59 +0900",
-      "source": "CoinPost"
-    },
-    {
-      "title": "グレースケール、イーサリアム・ミニETFの保有ETHを実質全量ステーキングへ",
-      "link": "https://coinpost.jp/?p=730561",
-      "pubDate": "Sat, 08 Aug 2026 06:25:55 +0900",
       "source": "CoinPost"
     }
   ]
