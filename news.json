@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-08-13T01:09:58.747Z",
+  "updatedAt": "2026-08-14T01:08:33.719Z",
   "count": 3,
   "items": [
     {
-      "title": "ビットコイン・イーサリアムETFの資金流入戻るも、経済指標に左右されやすい状況＝ウィンターミュート",
-      "link": "https://coinpost.jp/?p=730783",
-      "pubDate": "Wed, 12 Aug 2026 11:03:09 +0900",
+      "title": "ゴールドマン「BTC・ETH収益型ETF」3本を傘下に｜NEOS買収",
+      "link": "https://bittimes.net/news/226847.html",
+      "pubDate": "Thu, 13 Aug 2026 06:52:48 +0000",
+      "source": "BITTIMES"
+    },
+    {
+      "title": "ゴールドマン、ネオス買収合意　ビットコイン・イーサリアムETFも獲得",
+      "link": "https://coinpost.jp/?p=730906",
+      "pubDate": "Thu, 13 Aug 2026 11:53:49 +0900",
       "source": "CoinPost"
     },
     {
-      "title": "Fidelity files with SEC to add staking to Ethereum ETF",
-      "link": "https://cointelegraph.com/news/fidelity-staking-ethereum-etf-sec-filing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Wed, 12 Aug 2026 12:42:58 +0000",
-      "source": "CoinTelegraph"
-    },
-    {
-      "title": "現物ビットコインETFが1本消える｜17日で取引停止、清算へ",
-      "link": "https://crypto-times.jp/news-one-spot-bitcoin-etf-is-disappearing/",
-      "pubDate": "Wed, 12 Aug 2026 07:57:40 +0000",
-      "source": "CRYPTO TIMES"
+      "title": "米フィデリティ、イーサリアムETF「FETH」にステーキング機能追加へ",
+      "link": "https://coinpost.jp/?p=730922",
+      "pubDate": "Thu, 13 Aug 2026 12:56:09 +0900",
+      "source": "CoinPost"
     }
   ]
 }
