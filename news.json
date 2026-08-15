@@ -1,13 +1,7 @@
 {
-  "updatedAt": "2026-08-14T01:08:33.719Z",
+  "updatedAt": "2026-08-15T00:41:45.328Z",
   "count": 3,
   "items": [
-    {
-      "title": "ゴールドマン「BTC・ETH収益型ETF」3本を傘下に｜NEOS買収",
-      "link": "https://bittimes.net/news/226847.html",
-      "pubDate": "Thu, 13 Aug 2026 06:52:48 +0000",
-      "source": "BITTIMES"
-    },
     {
       "title": "ゴールドマン、ネオス買収合意　ビットコイン・イーサリアムETFも獲得",
       "link": "https://coinpost.jp/?p=730906",
@@ -15,9 +9,15 @@
       "source": "CoinPost"
     },
     {
-      "title": "米フィデリティ、イーサリアムETF「FETH」にステーキング機能追加へ",
-      "link": "https://coinpost.jp/?p=730922",
-      "pubDate": "Thu, 13 Aug 2026 12:56:09 +0900",
+      "title": "ノルウェー政府系ファンド、ビットコイン間接保有数が過去最高に",
+      "link": "https://coinpost.jp/?p=731028",
+      "pubDate": "Sat, 15 Aug 2026 07:15:34 +0900",
+      "source": "CoinPost"
+    },
+    {
+      "title": "米Cboe、ビットコインなど3倍レバレッジETFを申請",
+      "link": "https://coinpost.jp/?p=731026",
+      "pubDate": "Sat, 15 Aug 2026 06:05:04 +0900",
       "source": "CoinPost"
     }
   ]
