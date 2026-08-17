@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-08-16T00:43:22.085Z",
+  "updatedAt": "2026-08-17T00:41:53.563Z",
   "count": 3,
   "items": [
+    {
+      "title": "米テキサス州、13%下落でもビットコインETF売らず",
+      "link": "https://crypto-times.jp/news-texas-holds-bitcoin-etfs-despite-13-drop/",
+      "pubDate": "Sun, 16 Aug 2026 23:45:29 +0000",
+      "source": "CRYPTO TIMES"
+    },
     {
       "title": "【今日の仮想通貨】S&#038;P500最高値もBTC失速。テザーが4大会計事務所の監査を通過",
       "link": "https://crypto-times.jp/news-todays-cryptocurrency-news-august-15/",
@@ -9,16 +15,10 @@
       "source": "CRYPTO TIMES"
     },
     {
-      "title": "S&#038;P500は最高値もBTC足踏み、現物出来高は統計開始以来の低水準",
-      "link": "https://crypto-times.jp/news-sp-500-hits-record-high-but-btc-stalls/",
-      "pubDate": "Sat, 15 Aug 2026 04:55:56 +0000",
+      "title": "3倍レバのビットコインETF申請へ、2倍商品は1年で-79%の現実",
+      "link": "https://crypto-times.jp/news-application-to-be-filed-for-3x-leveraged-bitcoin-etf/",
+      "pubDate": "Sun, 16 Aug 2026 23:22:45 +0000",
       "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "ノルウェー年金基金、BTC間接保有が「前年比60%増」過去最高を更新",
-      "link": "https://bittimes.net/news/226959.html",
-      "pubDate": "Sat, 15 Aug 2026 04:07:08 +0000",
-      "source": "BITTIMES"
     }
   ]
 }
