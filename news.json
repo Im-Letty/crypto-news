@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-09-04T02:05:58.226Z",
+  "updatedAt": "2026-09-05T02:06:06.669Z",
   "count": 3,
   "items": [
-    {
-      "title": "リミックスポイント「ETH・SOL・XRP・DOGE」全売却｜BTC特化運用へ",
-      "link": "https://bittimes.net/news/228097.html",
-      "pubDate": "Wed, 02 Sep 2026 09:06:50 +0000",
-      "source": "BITTIMES"
-    },
-    {
-      "title": "Ether, XRP ETF inflow streaks end as Bitcoin funds rebound",
-      "link": "https://cointelegraph.com/markets/eth-xrp-etf-inflow-streaks-end-bitcoin-funds-rebound?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Thu, 03 Sep 2026 07:22:00 +0000",
-      "source": "CoinTelegraph"
-    },
     {
       "title": "ビットコインETFがS&P500超え｜ただし53%の下落に耐える必要",
       "link": "https://crypto-times.jp/news-ibit-vs-sp500-drawdown/",
       "pubDate": "Thu, 03 Sep 2026 05:49:00 +0000",
       "source": "CRYPTO TIMES"
+    },
+    {
+      "title": "Bitcoin ETF inflows hit $731M, highest since January as BTC reclaims $80K",
+      "link": "https://cointelegraph.com/markets/bitcoin-etf-draw-731-million-highest-january-btc-80k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Fri, 04 Sep 2026 07:37:13 +0000",
+      "source": "CoinTelegraph"
+    },
+    {
+      "title": "XRPL資産、過去最高の「6,740億円」個人口座減も機関利用が拡大",
+      "link": "https://bittimes.net/news/228149.html",
+      "pubDate": "Thu, 03 Sep 2026 10:22:38 +0000",
+      "source": "BITTIMES"
     }
   ]
 }
