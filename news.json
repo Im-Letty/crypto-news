@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-09-07T01:58:40.954Z",
+  "updatedAt": "2026-09-08T02:09:57.970Z",
   "count": 3,
   "items": [
+    {
+      "title": "ビットコイン現物ETFに先週約1539億円純流入、3週連続",
+      "link": "https://coinpost.jp/?p=735999",
+      "pubDate": "Mon, 07 Sep 2026 16:32:12 +0900",
+      "source": "CoinPost"
+    },
+    {
+      "title": "ビットコインETFの一極集中が止まらない｜シェア115.2%の実態とは",
+      "link": "https://crypto-times.jp/news-ibit-share-etf-concentration/",
+      "pubDate": "Mon, 07 Sep 2026 05:53:00 +0000",
+      "source": "CRYPTO TIMES"
+    },
     {
       "title": "‘White hats’ take 4000 BTC from Liquid, ETFs see best inflows of 2026: Hodler’s Digest",
       "link": "https://cointelegraph.com/magazine/white-hats-take-4000-btc-from-liquid-btc-etfs-best-week-of-2026-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "pubDate": "Mon, 07 Sep 2026 00:05:02 +0000",
       "source": "CoinTelegraph"
-    },
-    {
-      "title": "Bitcoin ETF inflows hit $3.8B in strongest three-week stretch of 2026",
-      "link": "https://cointelegraph.com/markets/bitcoin-etf-inflows-3-8-billion-strongest-three-week-run-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Sat, 05 Sep 2026 08:03:06 +0000",
-      "source": "CoinTelegraph"
-    },
-    {
-      "title": "週刊仮想通貨ニュース（9/4）｜相場分析・ストラテジーBTC戦略・金融庁の税制改正要望のまとめ",
-      "link": "https://coinpost.jp/?p=735559",
-      "pubDate": "Sun, 06 Sep 2026 09:25:57 +0900",
-      "source": "CoinPost"
     }
   ]
 }
