@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-09-08T02:09:57.970Z",
+  "updatedAt": "2026-09-09T02:14:04.117Z",
   "count": 3,
   "items": [
     {
-      "title": "ビットコイン現物ETFに先週約1539億円純流入、3週連続",
-      "link": "https://coinpost.jp/?p=735999",
-      "pubDate": "Mon, 07 Sep 2026 16:32:12 +0900",
-      "source": "CoinPost"
-    },
-    {
-      "title": "ビットコインETFの一極集中が止まらない｜シェア115.2%の実態とは",
-      "link": "https://crypto-times.jp/news-ibit-share-etf-concentration/",
-      "pubDate": "Mon, 07 Sep 2026 05:53:00 +0000",
+      "title": "「AIでビットコインが50%超下落」予測にイーサリアム創業者が反論",
+      "link": "https://crypto-times.jp/news-vitalik-ai-btc-risk/",
+      "pubDate": "Tue, 08 Sep 2026 03:41:00 +0000",
       "source": "CRYPTO TIMES"
     },
     {
-      "title": "‘White hats’ take 4000 BTC from Liquid, ETFs see best inflows of 2026: Hodler’s Digest",
-      "link": "https://cointelegraph.com/magazine/white-hats-take-4000-btc-from-liquid-btc-etfs-best-week-of-2026-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Mon, 07 Sep 2026 00:05:02 +0000",
-      "source": "CoinTelegraph"
+      "title": "リキッド公式説明、検証機能の脆弱性で4000ビットコイン流出",
+      "link": "https://coinpost.jp/?p=736424",
+      "pubDate": "Wed, 09 Sep 2026 09:51:20 +0900",
+      "source": "CoinPost"
+    },
+    {
+      "title": "4000BTCが流出したビットコインのサイドチェーン、3400BTCが返還",
+      "link": "https://crypto-times.jp/news-liquid-3996-btc-outflow/",
+      "pubDate": "Wed, 09 Sep 2026 00:37:07 +0000",
+      "source": "CRYPTO TIMES"
     }
   ]
 }
