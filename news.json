@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-09-17T02:31:55.212Z",
+  "updatedAt": "2026-09-18T02:17:25.478Z",
   "count": 3,
   "items": [
+    {
+      "title": "【今日の仮想通貨】FOMC3年ぶり利上げもBTC堅調。リップルが14%急落も小反発",
+      "link": "https://crypto-times.jp/news-crypto-update-20260917/",
+      "pubDate": "Thu, 17 Sep 2026 09:09:00 +0000",
+      "source": "CRYPTO TIMES"
+    },
+    {
+      "title": "ビットコインETFのヘッジ減れば、需要が金超えに＝JPモルガン",
+      "link": "https://coinpost.jp/?p=738242",
+      "pubDate": "Fri, 18 Sep 2026 10:15:54 +0900",
+      "source": "CoinPost"
+    },
     {
       "title": "ビットコインETFに1.6億ドル流入、FOMC次第で再び逆風も",
       "link": "https://crypto-times.jp/news-bitcoin-etf-flows-rebound/",
       "pubDate": "Wed, 16 Sep 2026 05:21:00 +0000",
       "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "Bitcoin ETFs shed $450M in biggest outflow since June",
-      "link": "https://cointelegraph.com/news/bitcoin-etfs-shed-450m-in-biggest-outflow-since-june?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Wed, 16 Sep 2026 04:05:39 +0000",
-      "source": "CoinTelegraph"
-    },
-    {
-      "title": "ビットコイン、下落幅は限定的も需要は停滞　クラリティー法案否決後の現在地分析＝グラスノード",
-      "link": "https://coinpost.jp/?p=737954",
-      "pubDate": "Thu, 17 Sep 2026 11:15:53 +0900",
-      "source": "CoinPost"
     }
   ]
 }
