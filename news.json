@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-09-18T02:17:25.478Z",
+  "updatedAt": "2026-09-19T02:19:47.068Z",
   "count": 3,
   "items": [
+    {
+      "title": "ビットコイン急騰、8万ドル台回復　SEC・CFTCの制度整備を好感｜仮想NISHI",
+      "link": "https://coinpost.jp/?p=738612",
+      "pubDate": "Sat, 19 Sep 2026 11:05:04 +0900",
+      "source": "CoinPost"
+    },
     {
       "title": "【今日の仮想通貨】FOMC3年ぶり利上げもBTC堅調。リップルが14%急落も小反発",
       "link": "https://crypto-times.jp/news-crypto-update-20260917/",
@@ -9,15 +15,9 @@
       "source": "CRYPTO TIMES"
     },
     {
-      "title": "ビットコインETFのヘッジ減れば、需要が金超えに＝JPモルガン",
-      "link": "https://coinpost.jp/?p=738242",
-      "pubDate": "Fri, 18 Sep 2026 10:15:54 +0900",
-      "source": "CoinPost"
-    },
-    {
-      "title": "ビットコインETFに1.6億ドル流入、FOMC次第で再び逆風も",
-      "link": "https://crypto-times.jp/news-bitcoin-etf-flows-rebound/",
-      "pubDate": "Wed, 16 Sep 2026 05:21:00 +0000",
+      "title": "BTCC、2026年9月度準備金証明レポートを発表：総準備金率141%、USDTは過去最高の165%を記録",
+      "link": "https://crypto-times.jp/press-btcc-2026-sep-reserve-report/",
+      "pubDate": "Fri, 18 Sep 2026 06:35:15 +0000",
       "source": "CRYPTO TIMES"
     }
   ]
