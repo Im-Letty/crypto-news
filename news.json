@@ -1,13 +1,7 @@
 {
-  "updatedAt": "2026-09-21T02:27:13.713Z",
+  "updatedAt": "2026-09-22T02:30:33.686Z",
   "count": 3,
   "items": [
-    {
-      "title": "ビットコイン急騰、8万ドル台回復　SEC・CFTCの制度整備を好感｜仮想NISHI",
-      "link": "https://coinpost.jp/?p=738612",
-      "pubDate": "Sat, 19 Sep 2026 11:05:04 +0900",
-      "source": "CoinPost"
-    },
     {
       "title": "リップル現物ETFから515万ドル流出、1.9億ドルの流入基調に変化か",
       "link": "https://crypto-times.jp/news-xrp-etf-outflow-inflow-trend/",
@@ -15,9 +9,15 @@
       "source": "CRYPTO TIMES"
     },
     {
-      "title": "BTCC、2026年9月度準備金証明レポートを発表：総準備金率141%、USDTは過去最高の165%を記録",
-      "link": "https://crypto-times.jp/press-btcc-2026-sep-reserve-report/",
-      "pubDate": "Fri, 18 Sep 2026 06:35:15 +0000",
+      "title": "BTC急騰「5日で12%反発」8.5万ドル突破しショート勢一掃",
+      "link": "https://bittimes.net/news/229096.html",
+      "pubDate": "Tue, 22 Sep 2026 02:26:07 +0000",
+      "source": "BITTIMES"
+    },
+    {
+      "title": "週末の上抜けは要注意？ビットコイン8.2万ドル目前、ETFは休場",
+      "link": "https://crypto-times.jp/news-bitcoin-82k-weekend-test/",
+      "pubDate": "Sun, 20 Sep 2026 07:40:00 +0000",
       "source": "CRYPTO TIMES"
     }
   ]
