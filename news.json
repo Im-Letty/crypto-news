@@ -1,13 +1,7 @@
 {
-  "updatedAt": "2026-09-23T02:30:11.166Z",
+  "updatedAt": "2026-09-24T02:19:34.587Z",
   "count": 3,
   "items": [
-    {
-      "title": "X社、BTC系アカウント運営2名を提訴「反応水増し」で収益不正取得",
-      "link": "https://bittimes.net/news/229117.html",
-      "pubDate": "Tue, 22 Sep 2026 05:45:41 +0000",
-      "source": "BITTIMES"
-    },
     {
       "title": "リップル現物ETFから515万ドル流出、1.9億ドルの流入基調に変化か",
       "link": "https://crypto-times.jp/news-xrp-etf-outflow-inflow-trend/",
@@ -15,10 +9,16 @@
       "source": "CRYPTO TIMES"
     },
     {
-      "title": "Bitcoin ETFs flirt with $1B as inflows hit 2026 high",
-      "link": "https://cointelegraph.com/markets/bitcoin-etf-biggest-inflow-october-2025?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Tue, 22 Sep 2026 07:33:37 +0000",
-      "source": "CoinTelegraph"
+      "title": "ビットコイン急騰でショート勢が大規模清算｜24時間で約6億ドルが強制決済に",
+      "link": "https://crypto-times.jp/news-btc-big-liquidation/",
+      "pubDate": "Tue, 22 Sep 2026 06:14:21 +0000",
+      "source": "CRYPTO TIMES"
+    },
+    {
+      "title": "ビットコイン一時8%急騰｜仮想通貨市場は3兆ドルを突破",
+      "link": "https://crypto-times.jp/news-btc-up-8-percent/",
+      "pubDate": "Tue, 22 Sep 2026 05:41:24 +0000",
+      "source": "CRYPTO TIMES"
     }
   ]
 }
