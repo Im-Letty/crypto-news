@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-09-28T02:40:31.773Z",
+  "updatedAt": "2026-09-29T03:22:50.708Z",
   "count": 3,
   "items": [
+    {
+      "title": "Bitcoin ETFs draw $2.4B in biggest inflow week since October 2025",
+      "link": "https://cointelegraph.com/markets/bitcoin-etf-billion-biggest-inflow-week-october-2025?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Mon, 28 Sep 2026 08:24:40 +0000",
+      "source": "CoinTelegraph"
+    },
+    {
+      "title": "Bitget resumes Bitcoin withdrawals as hacker swaps ETH via THORChain",
+      "link": "https://cointelegraph.com/news/bitget-btc-withdrawal-hacker-eth-swap-thorchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Mon, 28 Sep 2026 11:05:24 +0000",
+      "source": "CoinTelegraph"
+    },
     {
       "title": "仮想通貨ETFに4日で4780億円流入｜BTCは8.5万ドル維持に苦戦",
       "link": "https://crypto-times.jp/news-crypto-etf-inflows-3-billion/",
       "pubDate": "Sat, 26 Sep 2026 10:19:02 +0000",
-      "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "仮想通貨ニア（NEAR）現物ETF、米国初の上場承認　29日にも取引開始へ",
-      "link": "https://coinpost.jp/?p=739487",
-      "pubDate": "Mon, 28 Sep 2026 10:18:50 +0900",
-      "source": "CoinPost"
-    },
-    {
-      "title": "【今日の仮想通貨】Bitget不正流出の余波続く。米国債利回り上昇もBTCは底堅く",
-      "link": "https://crypto-times.jp/news-crypto-update-20260926/",
-      "pubDate": "Sat, 26 Sep 2026 10:24:32 +0000",
       "source": "CRYPTO TIMES"
     }
   ]
