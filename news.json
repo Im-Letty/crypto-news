@@ -1,17 +1,11 @@
 {
-  "updatedAt": "2026-10-06T03:57:47.054Z",
+  "updatedAt": "2026-10-07T03:24:32.704Z",
   "count": 3,
   "items": [
     {
-      "title": "米CFTCとSEC、ビットコインやイーサリアム・XRPを原則証券でないと共同解釈",
-      "link": "https://coinpost.jp/?p=741180",
-      "pubDate": "Tue, 06 Oct 2026 06:10:35 +0900",
-      "source": "CoinPost"
-    },
-    {
-      "title": "Bitcoin ETFs notch third inflow week as Ether ETFs shed $138M",
-      "link": "https://cointelegraph.com/markets/bitcoin-etf-third-inflow-week-ether-funds-red?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Mon, 05 Oct 2026 08:00:49 +0000",
+      "title": "Winklevoss-backed Zcash ETF files with SEC for Nasdaq listing",
+      "link": "https://cointelegraph.com/news/winklevoss-backed-zcash-etf-files-with-sec-for-nasdaq-listing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Tue, 06 Oct 2026 20:53:19 +0000",
       "source": "CoinTelegraph"
     },
     {
@@ -19,6 +13,12 @@
       "link": "https://crypto-times.jp/news-imf-el-salvador-bitcoin-waiver/",
       "pubDate": "Mon, 05 Oct 2026 07:35:00 +0000",
       "source": "CRYPTO TIMES"
+    },
+    {
+      "title": "Bitcoin.de trading remains halted as German regulator rejects MiCA application",
+      "link": "https://cointelegraph.com/news/bitcoinde-trading-remains-halted-as-german-regulator-rejects-mica-application?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Wed, 07 Oct 2026 01:48:53 +0000",
+      "source": "CoinTelegraph"
     }
   ]
 }
