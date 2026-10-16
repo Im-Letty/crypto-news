@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-10-15T02:26:34.884Z",
+  "updatedAt": "2026-10-16T02:20:57.106Z",
   "count": 3,
   "items": [
+    {
+      "title": "【今日の仮想通貨】利上げ確率上昇でBTC急落。リップルが証券業界へ本格進出か",
+      "link": "https://crypto-times.jp/news-crypto-update-20261015/",
+      "pubDate": "Thu, 15 Oct 2026 08:00:00 +0000",
+      "source": "CRYPTO TIMES"
+    },
     {
       "title": "ビットコイン下落、米CPI上振れで利上げ警戒｜仮想NISHI",
       "link": "https://coinpost.jp/?p=740303",
@@ -9,16 +15,10 @@
       "source": "CoinPost"
     },
     {
-      "title": "【今日の仮想通貨】韓国株急落もBTC堅調。量子耐性BTC送金のコストが大幅減",
-      "link": "https://crypto-times.jp/news-crypto-update-20261014/",
-      "pubDate": "Wed, 14 Oct 2026 07:22:55 +0000",
-      "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "サムスン・SKハイニックス急落、ビットコインは8.3万ドル台回復",
-      "link": "https://crypto-times.jp/news-bitcoin-83k-kospi-plunge/",
-      "pubDate": "Wed, 14 Oct 2026 06:13:43 +0000",
-      "source": "CRYPTO TIMES"
+      "title": "上場ビットコインマイナー3社の9月採掘量、2社が前月比減",
+      "link": "https://coinpost.jp/?p=743286",
+      "pubDate": "Fri, 16 Oct 2026 10:50:31 +0900",
+      "source": "CoinPost"
     }
   ]
 }
