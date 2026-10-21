@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-10-20T02:41:54.921Z",
+  "updatedAt": "2026-10-21T02:35:34.058Z",
   "count": 3,
   "items": [
     {
-      "title": "ブラックロック、下落緩和型のビットコインETF「PBIT」を申請",
-      "link": "https://coinpost.jp/?p=743880",
-      "pubDate": "Tue, 20 Oct 2026 10:38:59 +0900",
+      "title": "スイス初、一般向けビットコインETFを承認｜投資家保護付きで公募型に",
+      "link": "https://bittimes.net/news/231120.html",
+      "pubDate": "Wed, 21 Oct 2026 02:17:40 +0000",
+      "source": "BITTIMES"
+    },
+    {
+      "title": "スイス、ビットコイン現物ETFを初承認　一般投資家向け",
+      "link": "https://coinpost.jp/?p=744035",
+      "pubDate": "Wed, 21 Oct 2026 05:00:44 +0900",
       "source": "CoinPost"
     },
     {
-      "title": "Bitcoin, Ether ETFs shed $549M as October ETH outflows near $1B",
-      "link": "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Mon, 19 Oct 2026 07:54:13 +0000",
+      "title": "FINMA approves Switzerland’s first Bitcoin ETF for retail investors",
+      "link": "https://cointelegraph.com/news/finma-approves-switzerlands-first-bitcoin-etf-retail?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Tue, 20 Oct 2026 13:10:00 +0000",
       "source": "CoinTelegraph"
-    },
-    {
-      "title": "ビットコイン軟調、ETF流出と企業の買い鈍化が一因＝ギャラクシー・リサーチ",
-      "link": "https://coinpost.jp/?p=743489",
-      "pubDate": "Mon, 19 Oct 2026 08:45:44 +0900",
-      "source": "CoinPost"
     }
   ]
 }
