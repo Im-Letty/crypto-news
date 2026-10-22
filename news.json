@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-10-21T02:35:34.058Z",
+  "updatedAt": "2026-10-22T02:33:12.921Z",
   "count": 3,
   "items": [
+    {
+      "title": "スイス初のビットコイン現物ETF承認｜分散投資の「例外」認める",
+      "link": "https://crypto-times.jp/news-finma-swiss-bitcoin-etf-approval/",
+      "pubDate": "Wed, 21 Oct 2026 05:57:38 +0000",
+      "source": "CRYPTO TIMES"
+    },
     {
       "title": "スイス初、一般向けビットコインETFを承認｜投資家保護付きで公募型に",
       "link": "https://bittimes.net/news/231120.html",
@@ -9,16 +15,10 @@
       "source": "BITTIMES"
     },
     {
-      "title": "スイス、ビットコイン現物ETFを初承認　一般投資家向け",
-      "link": "https://coinpost.jp/?p=744035",
-      "pubDate": "Wed, 21 Oct 2026 05:00:44 +0900",
-      "source": "CoinPost"
-    },
-    {
-      "title": "FINMA approves Switzerland’s first Bitcoin ETF for retail investors",
-      "link": "https://cointelegraph.com/news/finma-approves-switzerlands-first-bitcoin-etf-retail?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Tue, 20 Oct 2026 13:10:00 +0000",
-      "source": "CoinTelegraph"
+      "title": "ハイテク株売りでもビットコイン底堅く｜下落率はナスダックの4分の1",
+      "link": "https://crypto-times.jp/news-bitcoin-resilient-nasdaq-selloff/",
+      "pubDate": "Wed, 21 Oct 2026 06:22:34 +0000",
+      "source": "CRYPTO TIMES"
     }
   ]
 }
