@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-10-27T02:58:56.520Z",
+  "updatedAt": "2026-10-28T03:09:04.733Z",
   "count": 3,
   "items": [
     {
-      "title": "Bitcoin ETFs break 2-week outflow streak with $301M comeback",
-      "link": "https://cointelegraph.com/markets/bitcoin-etfs-rebound-weekly-inflow-301-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Mon, 26 Oct 2026 08:20:49 +0000",
+      "title": "米ヴァンエック、ビットコイン2％組み入れの複数資産ETFを提供開始",
+      "link": "https://coinpost.jp/?p=745067",
+      "pubDate": "Wed, 28 Oct 2026 07:55:02 +0900",
+      "source": "CoinPost"
+    },
+    {
+      "title": "VanEck launches diversified ETF combining stocks, bonds and Bitcoin exposure",
+      "link": "https://cointelegraph.com/news/vaneck-launches-diversified-etf-combining-stocks-bonds-and-bitcoin-exposure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Tue, 27 Oct 2026 21:28:22 +0000",
       "source": "CoinTelegraph"
     },
     {
-      "title": "リップルが米信託銀行設立で最終承認を獲得、ステーブルコイン準備金を保管可能に",
-      "link": "https://coinpost.jp/?p=744793",
-      "pubDate": "Tue, 27 Oct 2026 09:50:48 +0900",
-      "source": "CoinPost"
-    },
-    {
-      "title": "米上場ストライブ、780億円相当ビットコインを追加購入　保有量4.3万BTCに",
-      "link": "https://coinpost.jp/?p=744763",
-      "pubDate": "Mon, 26 Oct 2026 21:40:31 +0900",
-      "source": "CoinPost"
+      "title": "Bitcoin ETFs claw back $110M after $774M exit",
+      "link": "https://cointelegraph.com/markets/bitcoin-etf-rebound-110-million-btc-dip-below-80k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Tue, 27 Oct 2026 07:35:37 +0000",
+      "source": "CoinTelegraph"
     }
   ]
 }
