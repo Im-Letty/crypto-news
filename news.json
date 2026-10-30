@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-10-29T03:34:48.277Z",
+  "updatedAt": "2026-10-30T03:37:54.942Z",
   "count": 3,
   "items": [
     {
-      "title": "ヴァンエック、4資産混合型ETF「WBMO」上場｜BTC配分は2%に",
-      "link": "https://bittimes.net/news/231768.html",
-      "pubDate": "Wed, 28 Oct 2026 03:16:22 +0000",
-      "source": "BITTIMES"
+      "title": "米フランクリン、配当をビットコインに再投資するETF2本を上場へ",
+      "link": "https://coinpost.jp/?p=745544",
+      "pubDate": "Fri, 30 Oct 2026 11:00:08 +0900",
+      "source": "CoinPost"
+    },
+    {
+      "title": "Private, fast USDT is coming to Bitcoin. Can it compete with Ethereum and Tron?",
+      "link": "https://cointelegraph.com/magazine/private-fast-usdt-is-coming-to-bitcoin-can-it-compete-with-ethereum-and-tron?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Thu, 29 Oct 2026 13:30:00 +0000",
+      "source": "CoinTelegraph"
     },
     {
       "title": "ビットコイン、今後6〜18カ月で過去最高値回復か｜複数の指標が底打ちを示唆",
       "link": "https://crypto-times.jp/news-bitcoin-could-reclaim-its-all-time-high-within-the-next-6-18-months/",
       "pubDate": "Wed, 28 Oct 2026 10:51:16 +0000",
       "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "Bitcoin ETF inflows climb to $176M as BTC rebounds above $80K",
-      "link": "https://cointelegraph.com/markets/bitcoin-etf-176-million-inflow-sentiment-rebounds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Wed, 28 Oct 2026 07:57:18 +0000",
-      "source": "CoinTelegraph"
     }
   ]
 }
