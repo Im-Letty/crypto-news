@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-11-02T03:31:32.357Z",
+  "updatedAt": "2026-11-03T04:39:45.030Z",
   "count": 3,
   "items": [
     {
-      "title": "週刊仮想通貨ニュース（10/30）｜バイナンス流出・BTC価格予測・リップルの発表のまとめ",
-      "link": "https://coinpost.jp/?p=745600",
-      "pubDate": "Sun, 01 Nov 2026 09:25:25 +0900",
-      "source": "CoinPost"
-    },
-    {
-      "title": "世界最大のビットコインETF、北朝鮮の標的か｜9.7兆円に警告",
-      "link": "https://crypto-times.jp/news-ibit-north-korea-hack-risk/",
-      "pubDate": "Sun, 01 Nov 2026 20:58:06 +0000",
+      "title": "【今日の仮想通貨】世界最大のビットコインETFが北朝鮮の標的に？米中間選挙で仮想通貨規制は変わる？",
+      "link": "https://crypto-times.jp/news-crypto-update-20261102/",
+      "pubDate": "Mon, 02 Nov 2026 08:00:00 +0000",
       "source": "CRYPTO TIMES"
     },
     {
-      "title": "BTCPay Server、ホットウォレット不正流出の報告受けサーバー停止を要請",
-      "link": "https://coinpost.jp/?p=745885",
-      "pubDate": "Mon, 02 Nov 2026 09:35:32 +0900",
+      "title": "ブラジル大手取引所Mercado Bitcoin、推計63億円超流出で入出金停止",
+      "link": "https://coinpost.jp/?p=746048",
+      "pubDate": "Tue, 03 Nov 2026 08:16:03 +0900",
       "source": "CoinPost"
+    },
+    {
+      "title": "バイナンス1兆円規模の流出で米規制論が再燃｜トランプ氏も言及",
+      "link": "https://crypto-times.jp/news-binance-hack-us-regulation-debate/",
+      "pubDate": "Mon, 02 Nov 2026 06:30:00 +0000",
+      "source": "CRYPTO TIMES"
     }
   ]
 }
