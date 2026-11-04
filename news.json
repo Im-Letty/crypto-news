@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-11-03T04:39:45.030Z",
+  "updatedAt": "2026-11-04T03:59:04.297Z",
   "count": 3,
   "items": [
+    {
+      "title": "ビットコイン、金利の追い風でもなぜ下落？ETFから2日で1640億円流出",
+      "link": "https://crypto-times.jp/news-bitcoin-real-yields-tech-selloff/",
+      "pubDate": "Tue, 03 Nov 2026 22:42:48 +0000",
+      "source": "CRYPTO TIMES"
+    },
     {
       "title": "【今日の仮想通貨】世界最大のビットコインETFが北朝鮮の標的に？米中間選挙で仮想通貨規制は変わる？",
       "link": "https://crypto-times.jp/news-crypto-update-20261102/",
@@ -9,16 +15,10 @@
       "source": "CRYPTO TIMES"
     },
     {
-      "title": "ブラジル大手取引所Mercado Bitcoin、推計63億円超流出で入出金停止",
-      "link": "https://coinpost.jp/?p=746048",
-      "pubDate": "Tue, 03 Nov 2026 08:16:03 +0900",
+      "title": "テザーが1.8兆円相当ビットコインを保有、ストラテジー以外の上場企業を大幅超過",
+      "link": "https://coinpost.jp/?p=746116",
+      "pubDate": "Wed, 04 Nov 2026 08:20:03 +0900",
       "source": "CoinPost"
-    },
-    {
-      "title": "バイナンス1兆円規模の流出で米規制論が再燃｜トランプ氏も言及",
-      "link": "https://crypto-times.jp/news-binance-hack-us-regulation-debate/",
-      "pubDate": "Mon, 02 Nov 2026 06:30:00 +0000",
-      "source": "CRYPTO TIMES"
     }
   ]
 }
