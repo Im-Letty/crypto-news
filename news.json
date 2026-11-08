@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-11-07T03:48:52.457Z",
+  "updatedAt": "2026-11-08T03:29:37.965Z",
   "count": 3,
   "items": [
+    {
+      "title": "【今日の仮想通貨】ビットコインETFから675億円流出。イーサリアム向けソフトに不具合",
+      "link": "https://crypto-times.jp/news-crypto-update-20261107/",
+      "pubDate": "Sat, 07 Nov 2026 09:00:00 +0000",
+      "source": "CRYPTO TIMES"
+    },
     {
       "title": "米中間選挙後投資家の資金引き上げ加速、BTC・ETH現物ETFから合計840億円流出",
       "link": "https://coinpost.jp/?p=746955",
@@ -9,16 +15,10 @@
       "source": "CoinPost"
     },
     {
-      "title": "ビットコイン急落で12億ドル超の強制清算、イーサリアムも大幅安",
-      "link": "https://crypto-times.jp/news-bitcoin-plunge-triggers-over-1-2-billion-in-forced-liquidations/",
-      "pubDate": "Fri, 06 Nov 2026 03:45:17 +0000",
+      "title": "ビットコインETFから675億円流出、「希少性」の強気論に逆風？",
+      "link": "https://crypto-times.jp/news-bitcoin-etf-supply-demand/",
+      "pubDate": "Sat, 07 Nov 2026 03:45:00 +0000",
       "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "Bitcoin, Ether ETFs post $530M outflows as election gains evaporate",
-      "link": "https://cointelegraph.com/markets/bitcoin-ether-etfs-lose-post-election-gains-erased?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Fri, 06 Nov 2026 08:19:18 +0000",
-      "source": "CoinTelegraph"
     }
   ]
 }
