@@ -1,13 +1,7 @@
 {
-  "updatedAt": "2026-11-13T04:12:11.736Z",
+  "updatedAt": "2026-11-14T04:08:40.156Z",
   "count": 3,
   "items": [
-    {
-      "title": "バイナンス流出XRP、ハッカー残高は6000万に｜BTCへ交換続く",
-      "link": "https://crypto-times.jp/news-binance-hack-xrp-thorchain/",
-      "pubDate": "Thu, 12 Nov 2026 03:07:17 +0000",
-      "source": "CRYPTO TIMES"
-    },
     {
       "title": "ビットコイン、8月以来の安値圏｜ETFから5日で14億ドル流出",
       "link": "https://crypto-times.jp/news-bitcoin-hits-lowest-levels-since-august/",
@@ -19,6 +13,12 @@
       "link": "https://bittimes.net/news/232684.html",
       "pubDate": "Thu, 12 Nov 2026 09:01:43 +0000",
       "source": "BITTIMES"
+    },
+    {
+      "title": "Jane Street boosts Fidelity Bitcoin ETF holdings nearly 8x, trims IBIT",
+      "link": "https://cointelegraph.com/news/jane-street-add-fidelity-bitcoin-etf-ibit-cut-q3-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "pubDate": "Fri, 13 Nov 2026 09:05:10 +0000",
+      "source": "CoinTelegraph"
     }
   ]
 }
