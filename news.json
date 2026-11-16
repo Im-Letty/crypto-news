@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-11-15T03:54:34.656Z",
+  "updatedAt": "2026-11-16T03:54:39.171Z",
   "count": 3,
   "items": [
+    {
+      "title": "イーサリアム財団関連アドレス、23億円相当のETH売却　現物ETFも7週連続流出",
+      "link": "https://coinpost.jp/?p=748022",
+      "pubDate": "Mon, 16 Nov 2026 11:15:45 +0900",
+      "source": "CoinPost"
+    },
     {
       "title": "【今日の仮想通貨】ビットコインが最高値から46%暴落、アンソロピックIPOトークンに落とし穴？",
       "link": "https://crypto-times.jp/news-crypto-update-20261114/",
@@ -9,16 +15,10 @@
       "source": "CRYPTO TIMES"
     },
     {
-      "title": "ビットコイン、8月以来の安値圏｜ETFから5日で14億ドル流出",
-      "link": "https://crypto-times.jp/news-bitcoin-hits-lowest-levels-since-august/",
-      "pubDate": "Thu, 12 Nov 2026 11:30:01 +0000",
-      "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "Bitcoin ETFs shed $2.35B in 2 weeks, BlackRock’s losing streak hits 11",
-      "link": "https://cointelegraph.com/markets/bitcoin-etf-outflows-2-35-billion-blackrock-11-session-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "pubDate": "Sat, 14 Nov 2026 06:33:13 +0000",
-      "source": "CoinTelegraph"
+      "title": "バイナンスのイーサリアム準備高、2020年以来の低水準に　流出続く＝アナリスト",
+      "link": "https://coinpost.jp/?p=748017",
+      "pubDate": "Mon, 16 Nov 2026 08:52:34 +0900",
+      "source": "CoinPost"
     }
   ]
 }
