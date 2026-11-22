@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-11-21T04:51:54.618Z",
+  "updatedAt": "2026-11-22T04:09:20.366Z",
   "count": 3,
   "items": [
     {
-      "title": "ビットコイン現物ETFで資金流出止まらず、BTC価格は一時6.1万ドル台まで下落",
-      "link": "https://coinpost.jp/?p=748889",
-      "pubDate": "Fri, 20 Nov 2026 12:15:31 +0900",
+      "title": "ビットコイン現物ETFから週間12億ドル流出、11月の流出は累計36億ドルに",
+      "link": "https://crypto-times.jp/news-bitcoin-spot-etf-weekly-outflow-november/",
+      "pubDate": "Sun, 22 Nov 2026 01:00:00 +0000",
+      "source": "CRYPTO TIMES"
+    },
+    {
+      "title": "SECがNvidiaの会計を調査と報道、株価14%急落でビットコインにも売り",
+      "link": "https://crypto-times.jp/news-nvidia-sec-accounting-probe-bitcoin/",
+      "pubDate": "Sat, 21 Nov 2026 09:30:00 +0000",
+      "source": "CRYPTO TIMES"
+    },
+    {
+      "title": "週刊仮想通貨ニュース（11/20）｜BTCとSOL強気予測・ETH相場・ファンドのメタプラ株保有まとめ",
+      "link": "https://coinpost.jp/?p=748859",
+      "pubDate": "Sun, 22 Nov 2026 09:25:36 +0900",
       "source": "CoinPost"
-    },
-    {
-      "title": "ビットコインが一時975万円、約4カ月ぶりの安値に、Anthropic上場日にETFから今月最大の流出",
-      "link": "https://crypto-times.jp/news-bitcoin-61k-anthropic-ipo-etf-outflow/",
-      "pubDate": "Fri, 20 Nov 2026 09:13:54 +0000",
-      "source": "CRYPTO TIMES"
-    },
-    {
-      "title": "最大手ビットコインETFから過去最大の資金流出、1日で5.4億ドル",
-      "link": "https://crypto-times.jp/news-largest-ever-capital-outflow-from-ibit/",
-      "pubDate": "Fri, 20 Nov 2026 10:02:01 +0000",
-      "source": "CRYPTO TIMES"
     }
   ]
 }
